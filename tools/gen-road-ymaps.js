@@ -92,8 +92,15 @@ function shapeHeights(L, junctions) {
     });
   }
   const rise = CONFIG.maxGrade * step;
-  for (let k = 1; k <= pieces; k++) zj[k] = Math.min(zj[k], zj[k - 1] + rise);
-  for (let k = pieces - 1; k >= 0; k--) zj[k] = Math.min(zj[k], zj[k + 1] + rise);
+  if (L.closed) {
+    // round the loop twice each way, so the limit carries across the seam; the last joint is the first
+    for (let n = 1; n <= 2 * pieces; n++) { const k = n % pieces, b = (n - 1) % pieces; zj[k] = Math.min(zj[k], zj[b] + rise); }
+    for (let n = 2 * pieces - 1; n >= 0; n--) { const k = n % pieces, b = (n + 1) % pieces; zj[k] = Math.min(zj[k], zj[b] + rise); }
+    zj[pieces] = zj[0];
+  } else {
+    for (let k = 1; k <= pieces; k++) zj[k] = Math.min(zj[k], zj[k - 1] + rise);
+    for (let k = pieces - 1; k >= 0; k--) zj[k] = Math.min(zj[k], zj[k + 1] + rise);
+  }
   zj = zj.map((z) => Math.max(CONFIG.z, z));
   // bridges: runs of joints over open sea at least bridgeMinSpan long
   const seaJoints = [];
@@ -244,13 +251,15 @@ const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, 
       const total = cum.at(-1); if (total < 1) return;
       const pieces = Math.max(1, Math.ceil((total - CONFIG.overlap) / pitch));
       const step = total / pieces;                                      // stretch evenly so the last piece ends on the end
-      const L = { road: r, li, w, cum, total, pieces, step };
+      // a loop (The Perimeter, County Line Road, ...) ends where it starts: its heights wrap round
+      const closed = Math.hypot(w[0][0] - w.at(-1)[0], w[0][1] - w.at(-1)[1]) < 1;
+      const L = { road: r, li, w, cum, total, pieces, step, closed };
       // Heights at every piece joint: the hills, smoothed, then held to maxGrade both ways.
       let zj = [];
       const sea = [];
       for (let k = 0; k <= pieces; k++) { const q = pointAt(L, Math.min(total, k * step)); zj.push(groundZ(q[0], q[1])); sea.push(overSea(q[0], q[1])); }
       for (let pass = 0; pass < 3; pass++)
-        zj = zj.map((_, k) => { let sum = 0, n = 0; for (let o = -3; o <= 3; o++) if (zj[k + o] !== undefined) { sum += zj[k + o]; n++; } return sum / n; });
+        zj = zj.map((_, k) => { let sum = 0, n = 0; for (let o = -3; o <= 3; o++) { const q = closed ? (((k + o) % pieces) + pieces) % pieces : k + o; if (zj[q] !== undefined) { sum += zj[q]; n++; } } return sum / n; });
       L.ground = zj; L.sea = sea;
       lines.push(L);
     });
@@ -276,14 +285,15 @@ const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, 
     // Keep a pin only if the road can still reach every pin kept so far at maxGrade; bigger roads first.
     // A pin that can't be kept leaves that junction unlevel, and it's reported below.
     const rise = CONFIG.maxGrade * L.step, pins = [];
+    const gap = (a, b) => { const d = Math.abs(a - b); return L.closed ? Math.min(d, L.pieces - d) : d; };   // joints apart (round a loop either way)
     for (const [k, z] of want.sort((a, b) => b[2] - a[2])) {
-      if (pins.every(([pk, pz]) => Math.abs(z - pz) <= rise * Math.abs(k - pk) + 1e-6)) pins.push([k, z]);
+      if (pins.every(([pk, pz]) => Math.abs(z - pz) <= rise * gap(k, pk) + 1e-6)) pins.push([k, z]);
     }
     if (pins.length) {
       // Lowest/highest each joint may be and still reach every pin at maxGrade; then stay as near the hills as that allows.
       L.zj = L.zj.map((z, k) => {
         let lo = -Infinity, hi = Infinity;
-        for (const [pk, pz] of pins) { const r = rise * Math.abs(k - pk); lo = Math.max(lo, pz - r); hi = Math.min(hi, pz + r); }
+        for (const [pk, pz] of pins) { const r = rise * gap(k, pk); lo = Math.max(lo, pz - r); hi = Math.min(hi, pz + r); }
         return Math.min(Math.max(z, lo), hi);
       });
     }
