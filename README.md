@@ -20,7 +20,11 @@ Open `island-map.html` in a browser to explore it.
 
 ## Rebuilding
 
-Everything is generated. Change a script or the data, then run, in this order:
+Everything is generated. When streets change in the gameplay repo, copy its street data in first:
+`node tools/sync-places.js` (add `--regen` to also run every step below), then
+`node tools/sync-from-island.js` in the gameplay repo takes the results back.
+
+Change a script or the data, then run, in this order:
 
 ```
 python3 tools/gen-island-map.py > island-map.html   # the map: coast, roads, buildings, names
@@ -47,7 +51,7 @@ for roads you touched.
 | `world-map/` | the in-game map page (FiveM resource) |
 | `street-renders/` | one image per street, plus `streets.json` |
 | `island-poster/` | poster renders |
-| `js-snippets/places.js`, `cities.js` | the game's street data, copied from the gameplay repo: the island's 770/312/1017 streets are fitted from it. Keep it in step with that repo. |
+| `js-snippets/places.js`, `cities.js` | the game's street data, copied in from the gameplay repo by `tools/sync-places.js`: the island's 770/312/1017 streets are fitted from it. |
 | `world/streets_geo.lua` | output for the gameplay repo's `world` resource |
 
 Each FiveM resource's README says how to turn its XML/OBJ into game files (CodeWalker, Blender +
