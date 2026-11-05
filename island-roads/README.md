@@ -10,10 +10,10 @@ python3 tools/gen-island-terrain.py   # rebuilds the ground AND these roads (it 
 node tools/gen-road-ymaps.js          # roads only, on the last terrain's hills
 ```
 
-Roads climb the island's hills (from `island-terrain/`) at no more than 12%, each piece tilted to its slope.
+Roads climb the island's hills (from `island-terrain/`) at no more than 17%, each piece tilted to its slope (measured along the piece itself, so bends count).
 
 Back roads and tracks roll: each gets two gentle swells of its own on top of the hills (up to
-about 5.5 m, never steeper than 12%), levelling out within 60 m of a junction. The ground is
+about 5.5 m, never steeper than 17%), levelling out within 60 m of a junction. The ground is
 shaped to match, since `island-terrain/` lays the land along the road pieces. Very short alleys
 sit entirely inside that 60 m, so they stay level.
 
@@ -24,9 +24,9 @@ the south end of The Connector. All of these are `CONFIG` settings (`backroadHil
 
 Where two roads meet, they meet at the same height: the bigger road (highway > arterial > street >
 backroad > track) keeps its height and the smaller one is pinned to it, easing back to its own hills
-on either side, still at no more than 12%. The script prints any junction it can't level, and
+on either side, still at no more than 17%. The script prints any junction it can't level, and
 `roads-index.json` lists them under `unlevelJunctions`. A junction stays unlevel when two other
-junctions on the same road are too close together, at heights too far apart for a 12% grade. The fix
+junctions on the same road are too close together, at heights too far apart for a 17% grade. The fix
 for those is in the map (move a road, or drop a link), not here.
 
 ## 1. Check the piece model first (once)

@@ -13,7 +13,7 @@
 - **Under every road:** the ground is flat at the road's height and blends back to the land within 28 m. Where a road climbs a hill, the ground is cut or filled to match it.
 
 It also reruns `tools/gen-road-ymaps.js`, so the roads climb the same hills. Their grade is capped
-at 12% and each piece is tilted to its slope. Where the hill is steeper than that, the ground is cut
+at 17% and each piece is tilted to its slope. Where the hill is steeper than that, the ground is cut
 down to the road.
 
 ```

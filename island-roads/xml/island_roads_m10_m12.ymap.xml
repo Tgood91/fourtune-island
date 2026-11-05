@@ -6,9 +6,9 @@
   <flags value="0" />
   <contentFlags value="1" />
   <streamingExtentsMin x="-5526.403124" y="-6543.481037" z="-377.000000" />
-  <streamingExtentsMax x="-4202.018301" y="-5332.389381" z="430.093867" />
+  <streamingExtentsMax x="-4202.018301" y="-5332.389381" z="430.153408" />
   <entitiesExtentsMin x="-5126.403124" y="-6143.481037" z="23.000000" />
-  <entitiesExtentsMax x="-4602.018301" y="-5732.389381" z="30.093867" />
+  <entitiesExtentsMax x="-4602.018301" y="-5732.389381" z="30.153408" />
   <entities>
     <Item type="CEntityDef">
       <archetypeName>stt_prop_track_straight_s</archetypeName>
@@ -13257,8 +13257,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-4910.566220" y="-5779.559958" z="26.990904" />
-      <rotation x="-0.054907" y="0.023383" z="0.391111" w="0.918407" />
+      <position x="-4910.566220" y="-5779.559958" z="27.050444" />
+      <rotation x="-0.060523" y="0.025774" z="0.390960" w="0.918054" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -13276,8 +13276,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-4903.655366" y="-5772.919999" z="28.093867" />
-      <rotation x="-0.050451" y="0.021491" z="0.391311" w="0.918623" />
+      <position x="-4903.655366" y="-5772.919999" z="28.153408" />
+      <rotation x="-0.044804" y="0.019085" z="0.391436" w="0.918916" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -13694,8 +13694,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-4848.682708" y="-6137.077913" z="26.514722" />
-      <rotation x="-0.011970" y="0.058469" z="0.977934" w="0.200207" />
+      <position x="-4848.682708" y="-6137.077913" z="26.576030" />
+      <rotation x="-0.013202" y="0.064486" z="0.977556" w="0.200130" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />

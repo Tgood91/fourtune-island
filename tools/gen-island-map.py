@@ -451,12 +451,21 @@ def around_rock(pts, margin=12):
         d = math.hypot((x - cx) / (rx + margin), (y - cy) / (ry + margin))
         if d < 1: x, y = cx + (x - cx) / max(d, 1e-6), cy + (y - cy) / max(d, 1e-6)
         out.append((x, y))
-    return out
+    # points pushed onto the same bit of edge pile up; keep one every 3 units, so no piece is a sliver
+    kept = [out[0]]
+    for q in out[1:-1]:
+        if math.dist(q, kept[-1]) >= 3: kept.append(q)
+    if math.dist(out[-1], kept[-1]) >= 3 or len(kept) == 1: kept.append(out[-1])
+    else: kept[-1] = out[-1]
+    return kept
 
 # Streets that lie mostly on the rock: pushed straight out (above), they all landed on the same
 # stretch of its edge, on top of each other. Each of these gets its own ring round the foot
 # instead (margin in map units past the rock), and runs along it the short way round.
 ROCK_RINGS = {"Silo Track": 12, "Hollow Road": 26, "Harvest Flats Road": 40}
+# Streets that land on top of a neighbour once the city is squashed onto the island (GeePee is fitted
+# about 6x tighter north-south than east-west): moved on the island only, in map units.
+ISLAND_NUDGE = {"Thresher Lane": (0, -12)}      # ran ~10 m from Harvest Lane, along it
 def ring_round_rock(pts, margin):
     dense = [pts[0]]
     for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
@@ -527,6 +536,7 @@ for kind in ["backroad", "street", "arterial", "highway"]:
     for i, r in enumerate(GAME["roads"]):
         if r["kind"] != kind or r["name"] in ON_ISLAND: continue
         pts = [FIT[r["city"]](x, y) for x, y in r["points"]]
+        dx, dy = ISLAND_NUDGE.get(r["name"], (0, 0)); pts = [(x + dx, y + dy) for x, y in pts]
         pts = ring_round_rock(pts, ROCK_RINGS[r["name"]]) if r["name"] in ROCK_RINGS else around_rock(pts)
         if pts[-1][0] < pts[0][0]: pts.reverse()                    # so the label reads left to right
         d = "M" + " L".join(f"{f(x)} {f(y)}" for x, y in pts)

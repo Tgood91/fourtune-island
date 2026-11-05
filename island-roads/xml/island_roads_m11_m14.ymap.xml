@@ -20211,8 +20211,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-5532.680246" y="-7082.999821" z="28.782516" />
-      <rotation x="0.024088" y="-0.040827" z="0.860305" w="0.507570" />
+      <position x="-5532.680246" y="-7082.999821" z="28.989470" />
+      <rotation x="0.012826" y="-0.021739" z="0.860999" w="0.507980" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -20230,8 +20230,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-5524.542411" y="-7087.461722" z="27.784240" />
-      <rotation x="0.030406" y="-0.051352" z="0.858940" w="0.508586" />
+      <position x="-5524.542411" y="-7087.461722" z="28.070352" />
+      <rotation x="0.037283" y="-0.062966" z="0.858167" w="0.508128" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -20249,8 +20249,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-5516.437438" y="-7091.982632" z="26.670544" />
-      <rotation x="0.030060" y="-0.051556" z="0.862346" w="0.502790" />
+      <position x="-5516.437438" y="-7091.982632" z="26.754611" />
+      <rotation x="0.034016" y="-0.058342" z="0.861914" w="0.502538" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -20268,8 +20268,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-5508.344336" y="-7096.524835" z="25.556848" />
-      <rotation x="0.030339" y="-0.051393" z="0.859607" w="0.507459" />
+      <position x="-5508.344336" y="-7096.524835" z="25.561757" />
+      <rotation x="0.030604" y="-0.051841" z="0.859580" w="0.507443" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />

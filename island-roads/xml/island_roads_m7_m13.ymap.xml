@@ -8507,8 +8507,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-3484.653707" y="-6508.706272" z="27.136843" />
-      <rotation x="0.041226" y="-0.040398" z="0.698727" w="0.713056" />
+      <position x="-3484.653707" y="-6508.706272" z="27.267651" />
+      <rotation x="0.031793" y="-0.031154" z="0.699200" w="0.713539" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -8526,8 +8526,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-3474.868689" y="-6508.496325" z="25.981845" />
-      <rotation x="0.042654" y="-0.041740" z="0.698155" w="0.713455" />
+      <position x="-3474.868689" y="-6508.496325" z="26.112653" />
+      <rotation x="0.052019" y="-0.050903" z="0.697547" w="0.712833" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />

@@ -7,7 +7,7 @@
 // Reads every named road in island-map.html (the same 107 the street atlas
 // renders), walks each one's centre line in the pre-installed Chromium, and
 // lays road-piece props end to end along it, climbing the island's hills
-// (island-terrain/road-guide.*, from tools/gen-island-terrain.py) at no more than 12%: one row for a street, two for
+// (island-terrain/road-guide.*, from tools/gen-island-terrain.py) at no more than 17%: one row for a street, two for
 // an arterial, three for a highway. The pieces are grouped into 512 m grid
 // cells, one ymap per cell, written as CodeWalker XML to
 //   island-roads/xml/island_roads_<col>_<row>.ymap.xml
@@ -36,7 +36,7 @@ const CONFIG = {
   centre: { x: -5500.0, y: -6500.0 },   // world X/Y of map point (750, 500): open sea, away from Los Santos and Cayo Perico
   z: 25.0,                // road level: the island's land sits 25 m above the sea
 
-  maxGrade: 0.12,         // steepest a road may climb (12%); steeper ground gets cut
+  maxGrade: 0.17,         // steepest a road may climb (17%); steeper ground gets cut
 
   // Back roads and tracks roll: two swells added on top of the ground, at most amp + amp2 metres,
   // each road with its own phase. Their steepest is about 11%; maxGrade still applies after.
@@ -91,15 +91,20 @@ function shapeHeights(L, junctions) {
                        + hills.amp2 * (0.5 + 0.5 * Math.sin(2 * Math.PI * d / hills.wave2 + p2)));
     });
   }
-  const rise = CONFIG.maxGrade * step;
+  // Each piece is laid straight from joint to joint, so on a bend it's shorter than the road it covers:
+  // the climb allowed across piece k is maxGrade times that straight length (L.rise[k]).
+  L.rise = [];
+  for (let k = 0; k < pieces; k++) { const a = pointAt(L, k * step), b = pointAt(L, Math.min(L.total, (k + 1) * step)); L.rise.push(CONFIG.maxGrade * Math.hypot(b[0] - a[0], b[1] - a[1])); }
+  L.riseTo = [0]; for (let k = 0; k < pieces; k++) L.riseTo.push(L.riseTo[k] + L.rise[k]);   // climb allowed from joint 0 to joint k
+  const rise = L.rise;
   if (L.closed) {
     // round the loop twice each way, so the limit carries across the seam; the last joint is the first
-    for (let n = 1; n <= 2 * pieces; n++) { const k = n % pieces, b = (n - 1) % pieces; zj[k] = Math.min(zj[k], zj[b] + rise); }
-    for (let n = 2 * pieces - 1; n >= 0; n--) { const k = n % pieces, b = (n + 1) % pieces; zj[k] = Math.min(zj[k], zj[b] + rise); }
+    for (let n = 1; n <= 2 * pieces; n++) { const k = n % pieces, b = (n - 1) % pieces; zj[k] = Math.min(zj[k], zj[b] + rise[b]); }
+    for (let n = 2 * pieces - 1; n >= 0; n--) { const k = n % pieces, b = (n + 1) % pieces; zj[k] = Math.min(zj[k], zj[b] + rise[k]); }
     zj[pieces] = zj[0];
   } else {
-    for (let k = 1; k <= pieces; k++) zj[k] = Math.min(zj[k], zj[k - 1] + rise);
-    for (let k = pieces - 1; k >= 0; k--) zj[k] = Math.min(zj[k], zj[k + 1] + rise);
+    for (let k = 1; k <= pieces; k++) zj[k] = Math.min(zj[k], zj[k - 1] + rise[k - 1]);
+    for (let k = pieces - 1; k >= 0; k--) zj[k] = Math.min(zj[k], zj[k + 1] + rise[k]);
   }
   zj = zj.map((z) => Math.max(CONFIG.z, z));
   // bridges: runs of joints over open sea at least bridgeMinSpan long
@@ -284,16 +289,17 @@ const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, 
     }
     // Keep a pin only if the road can still reach every pin kept so far at maxGrade; bigger roads first.
     // A pin that can't be kept leaves that junction unlevel, and it's reported below.
-    const rise = CONFIG.maxGrade * L.step, pins = [];
-    const gap = (a, b) => { const d = Math.abs(a - b); return L.closed ? Math.min(d, L.pieces - d) : d; };   // joints apart (round a loop either way)
+    const pins = [];
+    // the climb allowed between two joints (round a loop, the shorter way)
+    const gap = (a, b) => { const d = Math.abs(L.riseTo[b] - L.riseTo[a]); return L.closed ? Math.min(d, L.riseTo[L.pieces] - d) : d; };
     for (const [k, z] of want.sort((a, b) => b[2] - a[2])) {
-      if (pins.every(([pk, pz]) => Math.abs(z - pz) <= rise * gap(k, pk) + 1e-6)) pins.push([k, z]);
+      if (pins.every(([pk, pz]) => Math.abs(z - pz) <= gap(k, pk) + 1e-6)) pins.push([k, z]);
     }
     if (pins.length) {
       // Lowest/highest each joint may be and still reach every pin at maxGrade; then stay as near the hills as that allows.
       L.zj = L.zj.map((z, k) => {
         let lo = -Infinity, hi = Infinity;
-        for (const [pk, pz] of pins) { const r = rise * gap(k, pk); lo = Math.max(lo, pz - r); hi = Math.min(hi, pz + r); }
+        for (const [pk, pz] of pins) { const r = gap(k, pk); lo = Math.max(lo, pz - r); hi = Math.min(hi, pz + r); }
         return Math.min(Math.max(z, lo), hi);
       });
     }

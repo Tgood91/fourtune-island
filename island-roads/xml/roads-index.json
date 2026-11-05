@@ -10,7 +10,7 @@
    "y": -6500
   },
   "z": 25,
-  "maxGrade": 0.12,
+  "maxGrade": 0.17,
   "backroadHills": {
    "kinds": [
     "backroad",
@@ -47,20 +47,8 @@
   "track": 1
  },
  "totalPieces": 23328,
- "junctions": 1263,
- "unlevelJunctions": [
-  {
-   "gap": 6.7,
-   "roads": [
-    "770-S1",
-    "770-S2"
-   ],
-   "at": [
-    -5072,
-    -6551
-   ]
-  }
- ],
+ "junctions": 1264,
+ "unlevelJunctions": [],
  "ymaps": [
   {
    "file": "island_roads_m10_m12.ymap.xml",
