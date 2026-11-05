@@ -2,7 +2,7 @@
 
 `tools/gen-road-ymaps.js` reads every named road on `island-map.html` and lays road-piece props
 end to end along each one: one row for a street, two for an arterial, three for a highway.
-That is **14,418 pieces in 55 ymaps** for 164 roads, one per 512 m grid cell, in `xml/` as CodeWalker XML.
+That is **23,328 pieces in 71 ymaps** for 241 roads, one per 512 m grid cell, in `xml/` as CodeWalker XML.
 `xml/roads-index.json` lists which roads are in which ymap and how many pieces each road has.
 
 ```

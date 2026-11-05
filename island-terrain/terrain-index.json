@@ -7,12 +7,12 @@
  ],
  "grid": [
   385,
-  897
+  1185
  ],
  "heightmapMinZ": -20.0,
  "roadLevel": 25,
  "groundUnderRoads": 24.7,
- "peak": 914.4,
+ "peak": 908.9,
  "collisionMaterials": {
   "island_grass": "GRASS",
   "island_sand": "SAND_COMPACT",
@@ -27,7 +27,7 @@
     -8064.0
    ],
    "zmin": -20.0,
-   "zmax": 2.77,
+   "zmax": 3.05,
    "materials": [
     "sand"
    ]
@@ -39,7 +39,7 @@
     -8064.0
    ],
    "zmin": -20.0,
-   "zmax": 21.14,
+   "zmax": 21.91,
    "materials": [
     "sand"
    ]
@@ -51,9 +51,10 @@
     -8064.0
    ],
    "zmin": -18.09,
-   "zmax": 23.39,
+   "zmax": 24.57,
    "materials": [
     "grass",
+    "rock",
     "sand"
    ]
   },
@@ -64,9 +65,10 @@
     -8064.0
    ],
    "zmin": -19.36,
-   "zmax": 24.03,
+   "zmax": 26.63,
    "materials": [
     "grass",
+    "rock",
     "sand"
    ]
   },
@@ -77,8 +79,9 @@
     -8064.0
    ],
    "zmin": -20.0,
-   "zmax": 22.59,
+   "zmax": 26.51,
    "materials": [
+    "rock",
     "sand"
    ]
   },
@@ -95,13 +98,115 @@
    ]
   },
   {
+   "name": "island_terrain_27_01",
+   "centre": [
+    -1408.0,
+    -8064.0
+   ],
+   "zmin": -20.0,
+   "zmax": -0.42,
+   "materials": [
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_28_01",
+   "centre": [
+    -1152.0,
+    -8064.0
+   ],
+   "zmin": -20.0,
+   "zmax": 23.59,
+   "materials": [
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_29_01",
+   "centre": [
+    -896.0,
+    -8064.0
+   ],
+   "zmin": -17.98,
+   "zmax": 23.55,
+   "materials": [
+    "grass",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_30_01",
+   "centre": [
+    -640.0,
+    -8064.0
+   ],
+   "zmin": -14.1,
+   "zmax": 22.88,
+   "materials": [
+    "grass",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_31_01",
+   "centre": [
+    -384.0,
+    -8064.0
+   ],
+   "zmin": -14.0,
+   "zmax": 24.53,
+   "materials": [
+    "grass",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_32_01",
+   "centre": [
+    -128.0,
+    -8064.0
+   ],
+   "zmin": -16.56,
+   "zmax": 24.53,
+   "materials": [
+    "grass",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_33_01",
+   "centre": [
+    128.0,
+    -8064.0
+   ],
+   "zmin": -19.99,
+   "zmax": 25.85,
+   "materials": [
+    "grass",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_34_01",
+   "centre": [
+    384.0,
+    -8064.0
+   ],
+   "zmin": -20.0,
+   "zmax": 8.73,
+   "materials": [
+    "sand"
+   ]
+  },
+  {
    "name": "island_terrain_02_02",
    "centre": [
     -7808.0,
     -7808.0
    ],
    "zmin": -20.0,
-   "zmax": 28.12,
+   "zmax": 27.89,
    "materials": [
     "grass",
     "rock",
@@ -115,7 +220,7 @@
     -7808.0
    ],
    "zmin": -13.92,
-   "zmax": 39.0,
+   "zmax": 38.47,
    "materials": [
     "grass",
     "rock",
@@ -129,7 +234,7 @@
     -7808.0
    ],
    "zmin": -14.63,
-   "zmax": 30.49,
+   "zmax": 30.18,
    "materials": [
     "grass",
     "pavement",
@@ -143,9 +248,10 @@
     -7808.0
    ],
    "zmin": -20.0,
-   "zmax": 19.21,
+   "zmax": 26.13,
    "materials": [
     "grass",
+    "rock",
     "sand"
    ]
   },
@@ -156,7 +262,7 @@
     -7808.0
    ],
    "zmin": -20.0,
-   "zmax": 3.01,
+   "zmax": 3.26,
    "materials": [
     "sand"
    ]
@@ -168,7 +274,7 @@
     -7808.0
    ],
    "zmin": -9.82,
-   "zmax": 25.8,
+   "zmax": 27.08,
    "materials": [
     "grass",
     "pavement",
@@ -182,8 +288,8 @@
     -3456.0,
     -7808.0
    ],
-   "zmin": 2.77,
-   "zmax": 24.7,
+   "zmin": 3.05,
+   "zmax": 29.97,
    "materials": [
     "grass",
     "pavement",
@@ -196,8 +302,8 @@
     -3200.0,
     -7808.0
    ],
-   "zmin": 20.87,
-   "zmax": 24.7,
+   "zmin": 21.6,
+   "zmax": 29.15,
    "materials": [
     "grass",
     "pavement"
@@ -209,8 +315,8 @@
     -2944.0,
     -7808.0
    ],
-   "zmin": 21.38,
-   "zmax": 25.09,
+   "zmin": 23.84,
+   "zmax": 27.36,
    "materials": [
     "grass",
     "pavement",
@@ -224,7 +330,7 @@
     -7808.0
    ],
    "zmin": 0.8,
-   "zmax": 27.81,
+   "zmax": 27.68,
    "materials": [
     "grass",
     "pavement",
@@ -239,7 +345,7 @@
     -7808.0
    ],
    "zmin": -7.78,
-   "zmax": 27.29,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement",
@@ -277,13 +383,167 @@
    ]
   },
   {
+   "name": "island_terrain_26_02",
+   "centre": [
+    -1664.0,
+    -7808.0
+   ],
+   "zmin": -20.0,
+   "zmax": 27.92,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_27_02",
+   "centre": [
+    -1408.0,
+    -7808.0
+   ],
+   "zmin": -10.64,
+   "zmax": 29.44,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_28_02",
+   "centre": [
+    -1152.0,
+    -7808.0
+   ],
+   "zmin": -0.42,
+   "zmax": 25.16,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_29_02",
+   "centre": [
+    -896.0,
+    -7808.0
+   ],
+   "zmin": 20.61,
+   "zmax": 25.74,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_30_02",
+   "centre": [
+    -640.0,
+    -7808.0
+   ],
+   "zmin": 21.01,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_31_02",
+   "centre": [
+    -384.0,
+    -7808.0
+   ],
+   "zmin": 21.02,
+   "zmax": 24.72,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_32_02",
+   "centre": [
+    -128.0,
+    -7808.0
+   ],
+   "zmin": 20.33,
+   "zmax": 24.71,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_33_02",
+   "centre": [
+    128.0,
+    -7808.0
+   ],
+   "zmin": 8.44,
+   "zmax": 27.57,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_34_02",
+   "centre": [
+    384.0,
+    -7808.0
+   ],
+   "zmin": -7.69,
+   "zmax": 30.02,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_35_02",
+   "centre": [
+    640.0,
+    -7808.0
+   ],
+   "zmin": -19.97,
+   "zmax": 26.11,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_36_02",
+   "centre": [
+    896.0,
+    -7808.0
+   ],
+   "zmin": -20.0,
+   "zmax": -5.35,
+   "materials": [
+    "sand"
+   ]
+  },
+  {
    "name": "island_terrain_01_03",
    "centre": [
     -8064.0,
     -7552.0
    ],
    "zmin": -20.0,
-   "zmax": 25.61,
+   "zmax": 26.82,
    "materials": [
     "rock",
     "sand"
@@ -296,7 +556,7 @@
     -7552.0
    ],
    "zmin": -7.92,
-   "zmax": 79.04,
+   "zmax": 76.9,
    "materials": [
     "grass",
     "rock",
@@ -309,8 +569,8 @@
     -7552.0,
     -7552.0
    ],
-   "zmin": 28.12,
-   "zmax": 88.77,
+   "zmin": 27.89,
+   "zmax": 94.46,
    "materials": [
     "grass",
     "pavement",
@@ -323,8 +583,8 @@
     -7296.0,
     -7552.0
    ],
-   "zmin": 19.17,
-   "zmax": 78.52,
+   "zmin": 24.43,
+   "zmax": 77.32,
    "materials": [
     "grass",
     "pavement"
@@ -352,7 +612,7 @@
     -7552.0
    ],
    "zmin": -20.0,
-   "zmax": 26.68,
+   "zmax": 29.32,
    "materials": [
     "grass",
     "rock",
@@ -504,9 +764,8 @@
     -7552.0
    ],
    "zmin": -20.0,
-   "zmax": 29.41,
+   "zmax": 25.29,
    "materials": [
-    "grass",
     "rock",
     "sand"
    ]
@@ -517,8 +776,8 @@
     -3712.0,
     -7552.0
    ],
-   "zmin": 3.01,
-   "zmax": 29.86,
+   "zmin": 3.25,
+   "zmax": 28.28,
    "materials": [
     "grass",
     "pavement",
@@ -532,8 +791,8 @@
     -3456.0,
     -7552.0
    ],
-   "zmin": 22.19,
-   "zmax": 28.55,
+   "zmin": 21.12,
+   "zmax": 27.52,
    "materials": [
     "grass",
     "pavement"
@@ -545,8 +804,8 @@
     -3200.0,
     -7552.0
    ],
-   "zmin": 24.42,
-   "zmax": 25.22,
+   "zmin": 23.39,
+   "zmax": 25.11,
    "materials": [
     "grass",
     "pavement"
@@ -558,8 +817,8 @@
     -2944.0,
     -7552.0
    ],
-   "zmin": 23.12,
-   "zmax": 24.83,
+   "zmin": 20.49,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement"
@@ -571,8 +830,8 @@
     -2688.0,
     -7552.0
    ],
-   "zmin": 22.14,
-   "zmax": 27.07,
+   "zmin": 18.37,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement"
@@ -584,8 +843,8 @@
     -2432.0,
     -7552.0
    ],
-   "zmin": 23.03,
-   "zmax": 29.26,
+   "zmin": 21.6,
+   "zmax": 25.18,
    "materials": [
     "grass",
     "pavement"
@@ -597,11 +856,12 @@
     -2176.0,
     -7552.0
    ],
-   "zmin": 12.31,
-   "zmax": 31.78,
+   "zmin": 6.29,
+   "zmax": 27.12,
    "materials": [
     "grass",
     "pavement",
+    "rock",
     "sand"
    ]
   },
@@ -611,8 +871,8 @@
     -1920.0,
     -7552.0
    ],
-   "zmin": -12.36,
-   "zmax": 31.78,
+   "zmin": -11.68,
+   "zmax": 28.44,
    "materials": [
     "grass",
     "pavement",
@@ -626,8 +886,141 @@
     -1664.0,
     -7552.0
    ],
+   "zmin": -8.74,
+   "zmax": 29.38,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_27_03",
+   "centre": [
+    -1408.0,
+    -7552.0
+   ],
+   "zmin": 19.6,
+   "zmax": 26.01,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_28_03",
+   "centre": [
+    -1152.0,
+    -7552.0
+   ],
+   "zmin": 24.17,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_29_03",
+   "centre": [
+    -896.0,
+    -7552.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_30_03",
+   "centre": [
+    -640.0,
+    -7552.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_31_03",
+   "centre": [
+    -384.0,
+    -7552.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_32_03",
+   "centre": [
+    -128.0,
+    -7552.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_33_03",
+   "centre": [
+    128.0,
+    -7552.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_34_03",
+   "centre": [
+    384.0,
+    -7552.0
+   ],
+   "zmin": 24.68,
+   "zmax": 25.09,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_35_03",
+   "centre": [
+    640.0,
+    -7552.0
+   ],
+   "zmin": -5.35,
+   "zmax": 26.73,
+   "materials": [
+    "grass",
+    "pavement",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_36_03",
+   "centre": [
+    896.0,
+    -7552.0
+   ],
    "zmin": -20.0,
-   "zmax": 5.17,
+   "zmax": 8.2,
    "materials": [
     "sand"
    ]
@@ -639,7 +1032,7 @@
     -7296.0
    ],
    "zmin": -17.86,
-   "zmax": 26.84,
+   "zmax": 26.86,
    "materials": [
     "grass",
     "pavement",
@@ -653,12 +1046,11 @@
     -7808.0,
     -7296.0
    ],
-   "zmin": 24.7,
-   "zmax": 76.09,
+   "zmin": 20.23,
+   "zmax": 66.58,
    "materials": [
     "grass",
-    "pavement",
-    "sand"
+    "pavement"
    ]
   },
   {
@@ -667,8 +1059,8 @@
     -7552.0,
     -7296.0
    ],
-   "zmin": 23.49,
-   "zmax": 84.71,
+   "zmin": 23.03,
+   "zmax": 86.31,
    "materials": [
     "grass",
     "pavement",
@@ -681,8 +1073,8 @@
     -7296.0,
     -7296.0
    ],
-   "zmin": 20.45,
-   "zmax": 73.26,
+   "zmin": 20.33,
+   "zmax": 77.32,
    "materials": [
     "grass"
    ]
@@ -693,8 +1085,8 @@
     -7040.0,
     -7296.0
    ],
-   "zmin": 19.63,
-   "zmax": 29.64,
+   "zmin": 24.41,
+   "zmax": 29.77,
    "materials": [
     "grass",
     "pavement"
@@ -707,7 +1099,7 @@
     -7296.0
    ],
    "zmin": -8.35,
-   "zmax": 29.87,
+   "zmax": 30.91,
    "materials": [
     "grass",
     "pavement",
@@ -722,7 +1114,7 @@
     -7296.0
    ],
    "zmin": -9.26,
-   "zmax": 26.17,
+   "zmax": 29.43,
    "materials": [
     "grass",
     "pavement",
@@ -737,7 +1129,7 @@
     -7296.0
    ],
    "zmin": 0.84,
-   "zmax": 25.63,
+   "zmax": 29.42,
    "materials": [
     "grass",
     "pavement",
@@ -752,7 +1144,7 @@
     -7296.0
    ],
    "zmin": 0.84,
-   "zmax": 30.65,
+   "zmax": 29.51,
    "materials": [
     "grass",
     "pavement",
@@ -767,7 +1159,7 @@
     -7296.0
    ],
    "zmin": 1.0,
-   "zmax": 25.61,
+   "zmax": 27.92,
    "materials": [
     "grass",
     "pavement",
@@ -797,7 +1189,7 @@
     -7296.0
    ],
    "zmin": 1.0,
-   "zmax": 26.84,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement",
@@ -812,7 +1204,7 @@
     -7296.0
    ],
    "zmin": 0.84,
-   "zmax": 26.01,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement",
@@ -827,7 +1219,7 @@
     -7296.0
    ],
    "zmin": 0.84,
-   "zmax": 24.7,
+   "zmax": 30.32,
    "materials": [
     "grass",
     "pavement",
@@ -842,7 +1234,7 @@
     -7296.0
    ],
    "zmin": 0.07,
-   "zmax": 24.7,
+   "zmax": 27.27,
    "materials": [
     "grass",
     "pavement",
@@ -871,7 +1263,7 @@
     -7296.0
    ],
    "zmin": -7.99,
-   "zmax": 26.08,
+   "zmax": 27.77,
    "materials": [
     "grass",
     "pavement",
@@ -885,8 +1277,8 @@
     -3712.0,
     -7296.0
    ],
-   "zmin": 21.48,
-   "zmax": 26.16,
+   "zmin": 18.96,
+   "zmax": 27.91,
    "materials": [
     "grass",
     "pavement"
@@ -911,7 +1303,7 @@
     -3200.0,
     -7296.0
    ],
-   "zmin": 24.7,
+   "zmin": 24.58,
    "zmax": 24.7,
    "materials": [
     "grass",
@@ -924,8 +1316,8 @@
     -2944.0,
     -7296.0
    ],
-   "zmin": 22.85,
-   "zmax": 29.64,
+   "zmin": 20.06,
+   "zmax": 26.73,
    "materials": [
     "grass",
     "pavement"
@@ -937,8 +1329,8 @@
     -2688.0,
     -7296.0
    ],
-   "zmin": 21.86,
-   "zmax": 30.5,
+   "zmin": 17.07,
+   "zmax": 26.3,
    "materials": [
     "grass"
    ]
@@ -949,8 +1341,8 @@
     -2432.0,
     -7296.0
    ],
-   "zmin": 24.5,
-   "zmax": 30.68,
+   "zmin": 18.37,
+   "zmax": 26.2,
    "materials": [
     "grass"
    ]
@@ -961,8 +1353,8 @@
     -2176.0,
     -7296.0
    ],
-   "zmin": 20.62,
-   "zmax": 31.14,
+   "zmin": 20.41,
+   "zmax": 26.81,
    "materials": [
     "grass"
    ]
@@ -973,12 +1365,11 @@
     -1920.0,
     -7296.0
    ],
-   "zmin": 5.17,
-   "zmax": 30.76,
+   "zmin": 23.36,
+   "zmax": 29.63,
    "materials": [
     "grass",
     "pavement",
-    "rock",
     "sand"
    ]
   },
@@ -988,11 +1379,141 @@
     -1664.0,
     -7296.0
    ],
-   "zmin": -18.62,
-   "zmax": 26.77,
+   "zmin": 23.23,
+   "zmax": 30.85,
    "materials": [
     "grass",
-    "rock",
+    "pavement",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_27_04",
+   "centre": [
+    -1408.0,
+    -7296.0
+   ],
+   "zmin": 24.52,
+   "zmax": 25.92,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_28_04",
+   "centre": [
+    -1152.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_29_04",
+   "centre": [
+    -896.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_30_04",
+   "centre": [
+    -640.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_31_04",
+   "centre": [
+    -384.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_32_04",
+   "centre": [
+    -128.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_33_04",
+   "centre": [
+    128.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_34_04",
+   "centre": [
+    384.0,
+    -7296.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_35_04",
+   "centre": [
+    640.0,
+    -7296.0
+   ],
+   "zmin": 8.2,
+   "zmax": 24.87,
+   "materials": [
+    "grass",
+    "pavement",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_36_04",
+   "centre": [
+    896.0,
+    -7296.0
+   ],
+   "zmin": -20.0,
+   "zmax": 20.09,
+   "materials": [
     "sand"
    ]
   },
@@ -1003,11 +1524,10 @@
     -7040.0
    ],
    "zmin": -11.04,
-   "zmax": 25.79,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement",
-    "rock",
     "sand"
    ]
   },
@@ -1017,8 +1537,8 @@
     -7808.0,
     -7040.0
    ],
-   "zmin": 21.51,
-   "zmax": 29.37,
+   "zmin": 17.62,
+   "zmax": 24.7,
    "materials": [
     "grass"
    ]
@@ -1029,8 +1549,8 @@
     -7552.0,
     -7040.0
    ],
-   "zmin": 23.73,
-   "zmax": 26.74,
+   "zmin": 21.8,
+   "zmax": 25.94,
    "materials": [
     "grass",
     "pavement"
@@ -1042,8 +1562,8 @@
     -7296.0,
     -7040.0
    ],
-   "zmin": 19.99,
-   "zmax": 24.9,
+   "zmin": 20.8,
+   "zmax": 25.87,
    "materials": [
     "grass",
     "pavement"
@@ -1055,8 +1575,8 @@
     -7040.0,
     -7040.0
    ],
-   "zmin": 17.35,
-   "zmax": 24.7,
+   "zmin": 18.17,
+   "zmax": 28.41,
    "materials": [
     "grass"
    ]
@@ -1067,7 +1587,7 @@
     -6784.0,
     -7040.0
    ],
-   "zmin": 19.16,
+   "zmin": 14.4,
    "zmax": 29.91,
    "materials": [
     "grass",
@@ -1082,7 +1602,7 @@
     -7040.0
    ],
    "zmin": 1.0,
-   "zmax": 27.99,
+   "zmax": 30.32,
    "materials": [
     "grass",
     "rock",
@@ -1095,8 +1615,8 @@
     -6272.0,
     -7040.0
    ],
-   "zmin": 19.74,
-   "zmax": 26.61,
+   "zmin": 24.7,
+   "zmax": 29.97,
    "materials": [
     "grass",
     "pavement"
@@ -1108,8 +1628,8 @@
     -6016.0,
     -7040.0
    ],
-   "zmin": 22.88,
-   "zmax": 30.52,
+   "zmin": 24.7,
+   "zmax": 30.42,
    "materials": [
     "grass",
     "pavement"
@@ -1121,8 +1641,8 @@
     -5760.0,
     -7040.0
    ],
-   "zmin": 19.95,
-   "zmax": 25.09,
+   "zmin": 24.7,
+   "zmax": 28.93,
    "materials": [
     "grass",
     "pavement"
@@ -1134,7 +1654,7 @@
     -5504.0,
     -7040.0
    ],
-   "zmin": 21.47,
+   "zmin": 19.29,
    "zmax": 28.84,
    "materials": [
     "grass",
@@ -1147,8 +1667,8 @@
     -5248.0,
     -7040.0
    ],
-   "zmin": 21.41,
-   "zmax": 26.6,
+   "zmin": 19.12,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement"
@@ -1160,8 +1680,8 @@
     -4992.0,
     -7040.0
    ],
-   "zmin": 22.38,
-   "zmax": 26.01,
+   "zmin": 19.85,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement"
@@ -1173,8 +1693,8 @@
     -4736.0,
     -7040.0
    ],
-   "zmin": 19.21,
-   "zmax": 27.42,
+   "zmin": 23.54,
+   "zmax": 31.76,
    "materials": [
     "grass",
     "pavement"
@@ -1187,7 +1707,7 @@
     -7040.0
    ],
    "zmin": 0.07,
-   "zmax": 32.96,
+   "zmax": 33.02,
    "materials": [
     "grass",
     "pavement",
@@ -1231,7 +1751,7 @@
     -3712.0,
     -7040.0
    ],
-   "zmin": 20.29,
+   "zmin": 21.32,
    "zmax": 31.09,
    "materials": [
     "grass",
@@ -1244,8 +1764,8 @@
     -3456.0,
     -7040.0
    ],
-   "zmin": 24.7,
-   "zmax": 30.08,
+   "zmin": 22.87,
+   "zmax": 26.17,
    "materials": [
     "grass",
     "pavement"
@@ -1257,8 +1777,8 @@
     -3200.0,
     -7040.0
    ],
-   "zmin": 21.2,
-   "zmax": 26.34,
+   "zmin": 23.19,
+   "zmax": 26.18,
    "materials": [
     "grass",
     "pavement"
@@ -1270,8 +1790,8 @@
     -2944.0,
     -7040.0
    ],
-   "zmin": 20.65,
-   "zmax": 29.42,
+   "zmin": 22.16,
+   "zmax": 26.6,
    "materials": [
     "grass",
     "pavement"
@@ -1283,8 +1803,8 @@
     -2688.0,
     -7040.0
    ],
-   "zmin": 22.51,
-   "zmax": 29.91,
+   "zmin": 19.73,
+   "zmax": 28.3,
    "materials": [
     "grass",
     "pavement"
@@ -1296,8 +1816,8 @@
     -2432.0,
     -7040.0
    ],
-   "zmin": 22.16,
-   "zmax": 31.54,
+   "zmin": 20.48,
+   "zmax": 28.42,
    "materials": [
     "grass",
     "pavement"
@@ -1309,8 +1829,8 @@
     -2176.0,
     -7040.0
    ],
-   "zmin": 17.88,
-   "zmax": 31.86,
+   "zmin": 20.47,
+   "zmax": 29.49,
    "materials": [
     "grass",
     "pavement"
@@ -1322,8 +1842,8 @@
     -1920.0,
     -7040.0
    ],
-   "zmin": 18.04,
-   "zmax": 25.21,
+   "zmin": 22.73,
+   "zmax": 30.95,
    "materials": [
     "grass",
     "pavement"
@@ -1335,13 +1855,11 @@
     -1664.0,
     -7040.0
    ],
-   "zmin": -8.22,
-   "zmax": 30.86,
+   "zmin": 20.52,
+   "zmax": 29.66,
    "materials": [
     "grass",
-    "pavement",
-    "rock",
-    "sand"
+    "pavement"
    ]
   },
   {
@@ -1350,8 +1868,127 @@
     -1408.0,
     -7040.0
    ],
+   "zmin": 19.67,
+   "zmax": 26.46,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_28_05",
+   "centre": [
+    -1152.0,
+    -7040.0
+   ],
+   "zmin": 24.63,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_29_05",
+   "centre": [
+    -896.0,
+    -7040.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_30_05",
+   "centre": [
+    -640.0,
+    -7040.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_31_05",
+   "centre": [
+    -384.0,
+    -7040.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_32_05",
+   "centre": [
+    -128.0,
+    -7040.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_33_05",
+   "centre": [
+    128.0,
+    -7040.0
+   ],
+   "zmin": 24.7,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_34_05",
+   "centre": [
+    384.0,
+    -7040.0
+   ],
+   "zmin": 24.7,
+   "zmax": 25.29,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_35_05",
+   "centre": [
+    640.0,
+    -7040.0
+   ],
+   "zmin": -0.73,
+   "zmax": 30.46,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_36_05",
+   "centre": [
+    896.0,
+    -7040.0
+   ],
    "zmin": -20.0,
-   "zmax": -1.18,
+   "zmax": 17.12,
    "materials": [
     "sand"
    ]
@@ -1363,11 +2000,10 @@
     -6784.0
    ],
    "zmin": -8.87,
-   "zmax": 28.27,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement",
-    "rock",
     "sand"
    ]
   },
@@ -1377,8 +2013,8 @@
     -7808.0,
     -6784.0
    ],
-   "zmin": 21.79,
-   "zmax": 28.17,
+   "zmin": 17.62,
+   "zmax": 26.5,
    "materials": [
     "grass",
     "pavement"
@@ -1390,8 +2026,8 @@
     -7552.0,
     -6784.0
    ],
-   "zmin": 18.5,
-   "zmax": 28.54,
+   "zmin": 19.22,
+   "zmax": 28.31,
    "materials": [
     "grass",
     "pavement"
@@ -1403,8 +2039,8 @@
     -7296.0,
     -6784.0
    ],
-   "zmin": 24.17,
-   "zmax": 30.54,
+   "zmin": 22.38,
+   "zmax": 29.26,
    "materials": [
     "grass",
     "pavement"
@@ -1416,8 +2052,8 @@
     -7040.0,
     -6784.0
    ],
-   "zmin": 17.35,
-   "zmax": 36.46,
+   "zmin": 18.17,
+   "zmax": 36.55,
    "materials": [
     "grass",
     "pavement"
@@ -1429,8 +2065,8 @@
     -6784.0,
     -6784.0
    ],
-   "zmin": 23.26,
-   "zmax": 60.33,
+   "zmin": 19.72,
+   "zmax": 58.79,
    "materials": [
     "grass",
     "pavement",
@@ -1443,8 +2079,8 @@
     -6528.0,
     -6784.0
    ],
-   "zmin": 21.32,
-   "zmax": 106.89,
+   "zmin": 21.37,
+   "zmax": 107.61,
    "materials": [
     "grass",
     "pavement",
@@ -1457,8 +2093,8 @@
     -6272.0,
     -6784.0
    ],
-   "zmin": 20.43,
-   "zmax": 59.57,
+   "zmin": 24.7,
+   "zmax": 67.68,
    "materials": [
     "grass",
     "pavement",
@@ -1471,8 +2107,8 @@
     -6016.0,
     -6784.0
    ],
-   "zmin": 20.06,
-   "zmax": 28.26,
+   "zmin": 24.69,
+   "zmax": 29.46,
    "materials": [
     "grass",
     "pavement"
@@ -1484,8 +2120,8 @@
     -5760.0,
     -6784.0
    ],
-   "zmin": 19.71,
-   "zmax": 25.42,
+   "zmin": 23.9,
+   "zmax": 25.64,
    "materials": [
     "grass",
     "pavement"
@@ -1498,7 +2134,7 @@
     -6784.0
    ],
    "zmin": 24.7,
-   "zmax": 68.22,
+   "zmax": 66.47,
    "materials": [
     "pavement"
    ]
@@ -1510,7 +2146,7 @@
     -6784.0
    ],
    "zmin": 24.7,
-   "zmax": 65.57,
+   "zmax": 29.06,
    "materials": [
     "grass",
     "pavement"
@@ -1522,8 +2158,8 @@
     -4992.0,
     -6784.0
    ],
-   "zmin": 24.28,
-   "zmax": 29.44,
+   "zmin": 21.03,
+   "zmax": 29.14,
    "materials": [
     "grass",
     "pavement"
@@ -1535,7 +2171,7 @@
     -4736.0,
     -6784.0
    ],
-   "zmin": 19.38,
+   "zmin": 21.82,
    "zmax": 29.07,
    "materials": [
     "grass",
@@ -1548,11 +2184,12 @@
     -4480.0,
     -6784.0
    ],
-   "zmin": 17.45,
-   "zmax": 64.63,
+   "zmin": 19.39,
+   "zmax": 68.95,
    "materials": [
     "grass",
-    "pavement"
+    "pavement",
+    "rock"
    ]
   },
   {
@@ -1562,7 +2199,7 @@
     -6784.0
    ],
    "zmin": -6.24,
-   "zmax": 81.1,
+   "zmax": 84.96,
    "materials": [
     "grass",
     "pavement",
@@ -1577,7 +2214,7 @@
     -6784.0
    ],
    "zmin": -6.24,
-   "zmax": 25.56,
+   "zmax": 23.19,
    "materials": [
     "grass",
     "sand"
@@ -1589,8 +2226,8 @@
     -3712.0,
     -6784.0
    ],
-   "zmin": 20.76,
-   "zmax": 31.32,
+   "zmin": 18.83,
+   "zmax": 25.77,
    "materials": [
     "grass"
    ]
@@ -1601,8 +2238,8 @@
     -3456.0,
     -6784.0
    ],
-   "zmin": 22.89,
-   "zmax": 30.57,
+   "zmin": 22.94,
+   "zmax": 27.6,
    "materials": [
     "grass"
    ]
@@ -1613,8 +2250,8 @@
     -3200.0,
     -6784.0
    ],
-   "zmin": 21.2,
-   "zmax": 27.54,
+   "zmin": 21.72,
+   "zmax": 26.76,
    "materials": [
     "grass"
    ]
@@ -1625,8 +2262,8 @@
     -2944.0,
     -6784.0
    ],
-   "zmin": 19.68,
-   "zmax": 30.64,
+   "zmin": 22.39,
+   "zmax": 31.66,
    "materials": [
     "grass",
     "pavement"
@@ -1638,8 +2275,8 @@
     -2688.0,
     -6784.0
    ],
-   "zmin": 22.1,
-   "zmax": 31.69,
+   "zmin": 19.68,
+   "zmax": 28.3,
    "materials": [
     "grass",
     "pavement"
@@ -1651,8 +2288,8 @@
     -2432.0,
     -6784.0
    ],
-   "zmin": 22.1,
-   "zmax": 30.1,
+   "zmin": 20.48,
+   "zmax": 28.6,
    "materials": [
     "grass",
     "pavement"
@@ -1664,8 +2301,8 @@
     -2176.0,
     -6784.0
    ],
-   "zmin": 18.76,
-   "zmax": 30.65,
+   "zmin": 20.47,
+   "zmax": 30.05,
    "materials": [
     "grass",
     "pavement"
@@ -1677,8 +2314,8 @@
     -1920.0,
     -6784.0
    ],
-   "zmin": 18.52,
-   "zmax": 25.21,
+   "zmin": 20.86,
+   "zmax": 30.72,
    "materials": [
     "grass",
     "pavement"
@@ -1690,13 +2327,11 @@
     -1664.0,
     -6784.0
    ],
-   "zmin": -1.18,
-   "zmax": 30.86,
+   "zmin": 20.5,
+   "zmax": 25.84,
    "materials": [
     "grass",
-    "pavement",
-    "rock",
-    "sand"
+    "pavement"
    ]
   },
   {
@@ -1705,8 +2340,135 @@
     -1408.0,
     -6784.0
    ],
+   "zmin": 9.29,
+   "zmax": 31.62,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_28_06",
+   "centre": [
+    -1152.0,
+    -6784.0
+   ],
+   "zmin": 9.37,
+   "zmax": 32.3,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_29_06",
+   "centre": [
+    -896.0,
+    -6784.0
+   ],
+   "zmin": 21.79,
+   "zmax": 27.43,
+   "materials": [
+    "grass",
+    "pavement",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_30_06",
+   "centre": [
+    -640.0,
+    -6784.0
+   ],
+   "zmin": 21.67,
+   "zmax": 27.09,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_31_06",
+   "centre": [
+    -384.0,
+    -6784.0
+   ],
+   "zmin": 21.03,
+   "zmax": 26.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_32_06",
+   "centre": [
+    -128.0,
+    -6784.0
+   ],
+   "zmin": 21.51,
+   "zmax": 24.7,
+   "materials": [
+    "grass",
+    "pavement"
+   ]
+  },
+  {
+   "name": "island_terrain_33_06",
+   "centre": [
+    128.0,
+    -6784.0
+   ],
+   "zmin": 9.02,
+   "zmax": 26.33,
+   "materials": [
+    "grass",
+    "pavement",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_34_06",
+   "centre": [
+    384.0,
+    -6784.0
+   ],
+   "zmin": -5.35,
+   "zmax": 26.51,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_35_06",
+   "centre": [
+    640.0,
+    -6784.0
+   ],
+   "zmin": -17.35,
+   "zmax": 30.46,
+   "materials": [
+    "grass",
+    "pavement",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_36_06",
+   "centre": [
+    896.0,
+    -6784.0
+   ],
    "zmin": -20.0,
-   "zmax": 8.31,
+   "zmax": -0.73,
    "materials": [
     "sand"
    ]
@@ -1718,7 +2480,7 @@
     -6528.0
    ],
    "zmin": -8.22,
-   "zmax": 35.03,
+   "zmax": 39.59,
    "materials": [
     "grass",
     "rock",
@@ -1731,8 +2493,8 @@
     -7808.0,
     -6528.0
    ],
-   "zmin": 23.23,
-   "zmax": 39.39,
+   "zmin": 23.57,
+   "zmax": 50.73,
    "materials": [
     "grass",
     "pavement"
@@ -1744,8 +2506,8 @@
     -7552.0,
     -6528.0
    ],
-   "zmin": 17.68,
-   "zmax": 40.72,
+   "zmin": 19.89,
+   "zmax": 52.4,
    "materials": [
     "grass",
     "pavement"
@@ -1757,8 +2519,8 @@
     -7296.0,
     -6528.0
    ],
-   "zmin": 23.15,
-   "zmax": 39.36,
+   "zmin": 21.77,
+   "zmax": 45.38,
    "materials": [
     "grass",
     "pavement"
@@ -1770,8 +2532,8 @@
     -7040.0,
     -6528.0
    ],
-   "zmin": 21.53,
-   "zmax": 62.98,
+   "zmin": 24.5,
+   "zmax": 63.08,
    "materials": [
     "grass",
     "pavement",
@@ -1784,8 +2546,8 @@
     -6784.0,
     -6528.0
    ],
-   "zmin": 24.7,
-   "zmax": 133.73,
+   "zmin": 24.33,
+   "zmax": 112.05,
    "materials": [
     "grass",
     "pavement",
@@ -1799,7 +2561,7 @@
     -6528.0
    ],
    "zmin": 24.7,
-   "zmax": 180.54,
+   "zmax": 165.27,
    "materials": [
     "grass",
     "pavement",
@@ -1813,7 +2575,7 @@
     -6528.0
    ],
    "zmin": 24.7,
-   "zmax": 26.87,
+   "zmax": 26.97,
    "materials": [
     "pavement"
    ]
@@ -1824,7 +2586,7 @@
     -6016.0,
     -6528.0
    ],
-   "zmin": 20.07,
+   "zmin": 22.36,
    "zmax": 29.62,
    "materials": [
     "grass",
@@ -1837,8 +2599,8 @@
     -5760.0,
     -6528.0
    ],
-   "zmin": 17.93,
-   "zmax": 400.04,
+   "zmin": 21.01,
+   "zmax": 385.36,
    "materials": [
     "grass",
     "pavement",
@@ -1851,8 +2613,8 @@
     -5504.0,
     -6528.0
    ],
-   "zmin": 24.76,
-   "zmax": 914.42,
+   "zmin": 24.72,
+   "zmax": 908.86,
    "materials": [
     "grass",
     "pavement",
@@ -1865,8 +2627,8 @@
     -5248.0,
     -6528.0
    ],
-   "zmin": 25.07,
-   "zmax": 741.3,
+   "zmin": 24.7,
+   "zmax": 754.73,
    "materials": [
     "grass",
     "pavement",
@@ -1879,8 +2641,8 @@
     -4992.0,
     -6528.0
    ],
-   "zmin": 22.77,
-   "zmax": 131.39,
+   "zmin": 21.35,
+   "zmax": 132.67,
    "materials": [
     "grass",
     "pavement",
@@ -1893,8 +2655,8 @@
     -4736.0,
     -6528.0
    ],
-   "zmin": 23.35,
-   "zmax": 29.64,
+   "zmin": 20.48,
+   "zmax": 27.6,
    "materials": [
     "grass",
     "pavement"
@@ -1906,12 +2668,11 @@
     -4480.0,
     -6528.0
    ],
-   "zmin": 19.46,
-   "zmax": 66.92,
+   "zmin": 22.29,
+   "zmax": 71.73,
    "materials": [
     "grass",
-    "pavement",
-    "rock"
+    "pavement"
    ]
   },
   {
@@ -1920,8 +2681,8 @@
     -4224.0,
     -6528.0
    ],
-   "zmin": 23.3,
-   "zmax": 81.14,
+   "zmin": 21.6,
+   "zmax": 84.04,
    "materials": [
     "grass",
     "pavement",
@@ -1934,7 +2695,7 @@
     -3968.0,
     -6528.0
    ],
-   "zmin": 22.49,
+   "zmin": 19.72,
    "zmax": 29.22,
    "materials": [
     "grass",
@@ -1947,7 +2708,7 @@
     -3712.0,
     -6528.0
    ],
-   "zmin": 20.79,
+   "zmin": 19.55,
    "zmax": 30.08,
    "materials": [
     "grass",
@@ -1960,7 +2721,7 @@
     -3456.0,
     -6528.0
    ],
-   "zmin": 21.59,
+   "zmin": 21.68,
    "zmax": 27.38,
    "materials": [
     "grass",
@@ -1973,8 +2734,8 @@
     -3200.0,
     -6528.0
    ],
-   "zmin": 22.54,
-   "zmax": 30.44,
+   "zmin": 18.71,
+   "zmax": 29.95,
    "materials": [
     "grass",
     "pavement"
@@ -1986,8 +2747,8 @@
     -2944.0,
     -6528.0
    ],
-   "zmin": 19.27,
-   "zmax": 29.66,
+   "zmin": 20.83,
+   "zmax": 31.66,
    "materials": [
     "grass",
     "pavement"
@@ -1999,8 +2760,8 @@
     -2688.0,
     -6528.0
    ],
-   "zmin": 21.42,
-   "zmax": 30.23,
+   "zmin": 18.54,
+   "zmax": 26.35,
    "materials": [
     "grass",
     "pavement"
@@ -2012,8 +2773,8 @@
     -2432.0,
     -6528.0
    ],
-   "zmin": 19.87,
-   "zmax": 39.27,
+   "zmin": 21.79,
+   "zmax": 41.83,
    "materials": [
     "grass",
     "pavement"
@@ -2025,8 +2786,8 @@
     -2176.0,
     -6528.0
    ],
-   "zmin": 20.64,
-   "zmax": 57.6,
+   "zmin": 19.05,
+   "zmax": 61.03,
    "materials": [
     "grass",
     "pavement",
@@ -2039,8 +2800,8 @@
     -1920.0,
     -6528.0
    ],
-   "zmin": 20.99,
-   "zmax": 56.99,
+   "zmin": 19.2,
+   "zmax": 54.68,
    "materials": [
     "grass",
     "pavement"
@@ -2052,8 +2813,8 @@
     -1664.0,
     -6528.0
    ],
-   "zmin": 7.51,
-   "zmax": 31.51,
+   "zmin": 0.8,
+   "zmax": 32.07,
    "materials": [
     "grass",
     "pavement",
@@ -2068,7 +2829,114 @@
     -6528.0
    ],
    "zmin": -20.0,
-   "zmax": 8.31,
+   "zmax": 24.9,
+   "materials": [
+    "grass",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_28_07",
+   "centre": [
+    -1152.0,
+    -6528.0
+   ],
+   "zmin": -20.0,
+   "zmax": 22.78,
+   "materials": [
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_29_07",
+   "centre": [
+    -896.0,
+    -6528.0
+   ],
+   "zmin": -19.87,
+   "zmax": 26.65,
+   "materials": [
+    "grass",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_30_07",
+   "centre": [
+    -640.0,
+    -6528.0
+   ],
+   "zmin": -19.2,
+   "zmax": 27.35,
+   "materials": [
+    "grass",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_31_07",
+   "centre": [
+    -384.0,
+    -6528.0
+   ],
+   "zmin": -18.58,
+   "zmax": 26.95,
+   "materials": [
+    "grass",
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_32_07",
+   "centre": [
+    -128.0,
+    -6528.0
+   ],
+   "zmin": -18.91,
+   "zmax": 23.99,
+   "materials": [
+    "grass",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_33_07",
+   "centre": [
+    128.0,
+    -6528.0
+   ],
+   "zmin": -20.0,
+   "zmax": 24.69,
+   "materials": [
+    "rock",
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_34_07",
+   "centre": [
+    384.0,
+    -6528.0
+   ],
+   "zmin": -20.0,
+   "zmax": 9.02,
+   "materials": [
+    "sand"
+   ]
+  },
+  {
+   "name": "island_terrain_35_07",
+   "centre": [
+    640.0,
+    -6528.0
+   ],
+   "zmin": -20.0,
+   "zmax": -5.35,
    "materials": [
     "sand"
    ]
@@ -2080,7 +2948,7 @@
     -6272.0
    ],
    "zmin": -19.81,
-   "zmax": 34.41,
+   "zmax": 37.67,
    "materials": [
     "grass",
     "pavement",
@@ -2095,7 +2963,7 @@
     -6272.0
    ],
    "zmin": -1.87,
-   "zmax": 44.43,
+   "zmax": 50.56,
    "materials": [
     "grass",
     "pavement",
@@ -2109,8 +2977,8 @@
     -7552.0,
     -6272.0
    ],
-   "zmin": 26.66,
-   "zmax": 45.19,
+   "zmin": 26.88,
+   "zmax": 52.21,
    "materials": [
     "grass",
     "pavement"
@@ -2122,8 +2990,8 @@
     -7296.0,
     -6272.0
    ],
-   "zmin": 24.21,
-   "zmax": 43.62,
+   "zmin": 24.7,
+   "zmax": 45.05,
    "materials": [
     "grass",
     "pavement"
@@ -2135,8 +3003,8 @@
     -7040.0,
     -6272.0
    ],
-   "zmin": 21.7,
-   "zmax": 29.37,
+   "zmin": 24.49,
+   "zmax": 33.54,
    "materials": [
     "grass",
     "pavement"
@@ -2149,7 +3017,7 @@
     -6272.0
    ],
    "zmin": 0.25,
-   "zmax": 136.0,
+   "zmax": 101.06,
    "materials": [
     "grass",
     "pavement",
@@ -2163,8 +3031,8 @@
     -6528.0,
     -6272.0
    ],
-   "zmin": 3.52,
-   "zmax": 175.16,
+   "zmin": 3.51,
+   "zmax": 166.87,
    "materials": [
     "grass",
     "pavement",
@@ -2177,8 +3045,8 @@
     -6272.0,
     -6272.0
    ],
-   "zmin": 23.29,
-   "zmax": 107.81,
+   "zmin": 24.52,
+   "zmax": 141.46,
    "materials": [
     "grass",
     "pavement",
@@ -2191,8 +3059,8 @@
     -6016.0,
     -6272.0
    ],
-   "zmin": 19.43,
-   "zmax": 27.59,
+   "zmin": 21.79,
+   "zmax": 27.24,
    "materials": [
     "grass",
     "pavement"
@@ -2204,8 +3072,8 @@
     -5760.0,
     -6272.0
    ],
-   "zmin": 20.69,
-   "zmax": 400.04,
+   "zmin": 23.55,
+   "zmax": 385.36,
    "materials": [
     "grass",
     "pavement",
@@ -2219,7 +3087,7 @@
     -6272.0
    ],
    "zmin": 25.07,
-   "zmax": 877.63,
+   "zmax": 873.99,
    "materials": [
     "grass",
     "pavement",
@@ -2233,7 +3101,7 @@
     -6272.0
    ],
    "zmin": 24.7,
-   "zmax": 731.77,
+   "zmax": 744.1,
    "materials": [
     "grass",
     "pavement",
@@ -2246,8 +3114,8 @@
     -4992.0,
     -6272.0
    ],
-   "zmin": 20.73,
-   "zmax": 131.42,
+   "zmin": 21.93,
+   "zmax": 132.91,
    "materials": [
     "grass",
     "pavement",
@@ -2260,7 +3128,7 @@
     -4736.0,
     -6272.0
    ],
-   "zmin": 21.85,
+   "zmin": 18.83,
    "zmax": 29.8,
    "materials": [
     "grass",
@@ -2273,8 +3141,8 @@
     -4480.0,
     -6272.0
    ],
-   "zmin": 21.61,
-   "zmax": 29.92,
+   "zmin": 20.5,
+   "zmax": 33.01,
    "materials": [
     "grass",
     "pavement"
@@ -2287,7 +3155,7 @@
     -6272.0
    ],
    "zmin": 1.0,
-   "zmax": 37.45,
+   "zmax": 41.68,
    "materials": [
     "grass",
     "pavement",
@@ -2302,7 +3170,7 @@
     -6272.0
    ],
    "zmin": 0.61,
-   "zmax": 28.4,
+   "zmax": 31.29,
    "materials": [
     "grass",
     "pavement",
@@ -2316,8 +3184,8 @@
     -3712.0,
     -6272.0
    ],
-   "zmin": 24.57,
-   "zmax": 24.86,
+   "zmin": 24.61,
+   "zmax": 24.7,
    "materials": [
     "grass",
     "pavement"
@@ -2329,7 +3197,7 @@
     -3456.0,
     -6272.0
    ],
-   "zmin": 22.89,
+   "zmin": 23.32,
    "zmax": 24.7,
    "materials": [
     "pavement"
@@ -2341,8 +3209,8 @@
     -3200.0,
     -6272.0
    ],
-   "zmin": 22.73,
-   "zmax": 28.2,
+   "zmin": 19.46,
+   "zmax": 24.92,
    "materials": [
     "grass",
     "pavement"
@@ -2354,8 +3222,8 @@
     -2944.0,
     -6272.0
    ],
-   "zmin": 20.05,
-   "zmax": 26.35,
+   "zmin": 21.34,
+   "zmax": 29.39,
    "materials": [
     "grass",
     "pavement"
@@ -2367,8 +3235,8 @@
     -2688.0,
     -6272.0
    ],
-   "zmin": 18.31,
-   "zmax": 30.37,
+   "zmin": 18.48,
+   "zmax": 23.9,
    "materials": [
     "grass"
    ]
@@ -2379,8 +3247,8 @@
     -2432.0,
     -6272.0
    ],
-   "zmin": 22.08,
-   "zmax": 80.33,
+   "zmin": 20.79,
+   "zmax": 80.1,
    "materials": [
     "grass",
     "pavement",
@@ -2393,8 +3261,8 @@
     -2176.0,
     -6272.0
    ],
-   "zmin": 39.27,
-   "zmax": 132.51,
+   "zmin": 41.83,
+   "zmax": 126.59,
    "materials": [
     "grass",
     "pavement",
@@ -2407,8 +3275,8 @@
     -1920.0,
     -6272.0
    ],
-   "zmin": 31.51,
-   "zmax": 131.55,
+   "zmin": 32.07,
+   "zmax": 125.72,
    "materials": [
     "grass",
     "pavement",
@@ -2422,7 +3290,7 @@
     -6272.0
    ],
    "zmin": -4.34,
-   "zmax": 54.52,
+   "zmax": 57.27,
    "materials": [
     "grass",
     "pavement",
@@ -2437,7 +3305,7 @@
     -6272.0
    ],
    "zmin": -20.0,
-   "zmax": 7.76,
+   "zmax": 0.8,
    "materials": [
     "sand"
    ]
@@ -2461,9 +3329,10 @@
     -6016.0
    ],
    "zmin": -20.0,
-   "zmax": 26.67,
+   "zmax": 27.34,
    "materials": [
     "grass",
+    "rock",
     "sand"
    ]
   },
@@ -2474,10 +3343,11 @@
     -6016.0
    ],
    "zmin": -12.65,
-   "zmax": 30.16,
+   "zmax": 32.03,
    "materials": [
     "grass",
     "pavement",
+    "rock",
     "sand"
    ]
   },
@@ -2488,7 +3358,7 @@
     -6016.0
    ],
    "zmin": -10.59,
-   "zmax": 28.71,
+   "zmax": 29.11,
    "materials": [
     "grass",
     "pavement",
@@ -2503,7 +3373,7 @@
     -6016.0
    ],
    "zmin": -18.29,
-   "zmax": 26.79,
+   "zmax": 30.51,
    "materials": [
     "grass",
     "rock",
@@ -2517,7 +3387,7 @@
     -6016.0
    ],
    "zmin": -20.0,
-   "zmax": 24.15,
+   "zmax": 24.49,
    "materials": [
     "rock",
     "sand"
@@ -2530,7 +3400,7 @@
     -6016.0
    ],
    "zmin": -8.74,
-   "zmax": 57.02,
+   "zmax": 65.75,
    "materials": [
     "grass",
     "pavement",
@@ -2544,8 +3414,8 @@
     -6272.0,
     -6016.0
    ],
-   "zmin": 16.67,
-   "zmax": 44.11,
+   "zmin": 14.88,
+   "zmax": 44.6,
    "materials": [
     "grass",
     "pavement",
@@ -2558,8 +3428,8 @@
     -6016.0,
     -6016.0
    ],
-   "zmin": 23.48,
-   "zmax": 28.28,
+   "zmin": 23.62,
+   "zmax": 28.0,
    "materials": [
     "grass",
     "pavement"
@@ -2571,8 +3441,8 @@
     -5760.0,
     -6016.0
    ],
-   "zmin": 23.59,
-   "zmax": 27.59,
+   "zmin": 23.55,
+   "zmax": 28.46,
    "materials": [
     "grass",
     "pavement"
@@ -2584,8 +3454,8 @@
     -5504.0,
     -6016.0
    ],
-   "zmin": 24.07,
-   "zmax": 29.57,
+   "zmin": 24.7,
+   "zmax": 29.55,
    "materials": [
     "grass",
     "pavement"
@@ -2597,8 +3467,8 @@
     -5248.0,
     -6016.0
    ],
-   "zmin": 24.66,
-   "zmax": 27.62,
+   "zmin": 24.7,
+   "zmax": 28.21,
    "materials": [
     "grass",
     "pavement"
@@ -2610,8 +3480,8 @@
     -4992.0,
     -6016.0
    ],
-   "zmin": 24.08,
-   "zmax": 28.74,
+   "zmin": 21.92,
+   "zmax": 29.06,
    "materials": [
     "grass",
     "pavement"
@@ -2623,8 +3493,8 @@
     -4736.0,
     -6016.0
    ],
-   "zmin": 23.11,
-   "zmax": 27.92,
+   "zmin": 20.74,
+   "zmax": 27.39,
    "materials": [
     "grass",
     "pavement"
@@ -2636,8 +3506,8 @@
     -4480.0,
     -6016.0
    ],
-   "zmin": 4.54,
-   "zmax": 26.21,
+   "zmin": 5.03,
+   "zmax": 26.39,
    "materials": [
     "grass",
     "pavement",
@@ -2651,7 +3521,7 @@
     -6016.0
    ],
    "zmin": -16.04,
-   "zmax": 27.2,
+   "zmax": 27.13,
    "materials": [
     "grass",
     "pavement",
@@ -2680,7 +3550,7 @@
     -6016.0
    ],
    "zmin": -15.05,
-   "zmax": 25.03,
+   "zmax": 24.77,
    "materials": [
     "grass",
     "pavement",
@@ -2695,7 +3565,7 @@
     -6016.0
    ],
    "zmin": -6.69,
-   "zmax": 26.03,
+   "zmax": 26.89,
    "materials": [
     "grass",
     "pavement",
@@ -2709,11 +3579,12 @@
     -3200.0,
     -6016.0
    ],
-   "zmin": 2.71,
-   "zmax": 26.53,
+   "zmin": 2.88,
+   "zmax": 26.63,
    "materials": [
     "grass",
     "pavement",
+    "rock",
     "sand"
    ]
   },
@@ -2723,8 +3594,8 @@
     -2944.0,
     -6016.0
    ],
-   "zmin": 22.44,
-   "zmax": 29.74,
+   "zmin": 23.82,
+   "zmax": 28.27,
    "materials": [
     "grass",
     "pavement"
@@ -2736,8 +3607,8 @@
     -2688.0,
     -6016.0
    ],
-   "zmin": 18.47,
-   "zmax": 26.41,
+   "zmin": 20.93,
+   "zmax": 28.27,
    "materials": [
     "grass",
     "pavement"
@@ -2749,12 +3620,11 @@
     -2432.0,
     -6016.0
    ],
-   "zmin": 19.28,
-   "zmax": 51.0,
+   "zmin": 18.82,
+   "zmax": 49.15,
    "materials": [
     "grass",
-    "pavement",
-    "rock"
+    "pavement"
    ]
   },
   {
@@ -2763,8 +3633,8 @@
     -2176.0,
     -6016.0
    ],
-   "zmin": 18.25,
-   "zmax": 85.73,
+   "zmin": 21.13,
+   "zmax": 90.9,
    "materials": [
     "grass",
     "pavement",
@@ -2778,7 +3648,7 @@
     -6016.0
    ],
    "zmin": 0.07,
-   "zmax": 90.4,
+   "zmax": 95.68,
    "materials": [
     "grass",
     "pavement",
@@ -2793,7 +3663,7 @@
     -6016.0
    ],
    "zmin": -17.86,
-   "zmax": 38.26,
+   "zmax": 46.58,
    "materials": [
     "grass",
     "pavement",
@@ -2820,7 +3690,7 @@
     -5760.0
    ],
    "zmin": -20.0,
-   "zmax": 16.67,
+   "zmax": 14.88,
    "materials": [
     "sand"
    ]
@@ -2913,7 +3783,7 @@
     -5760.0
    ],
    "zmin": -8.98,
-   "zmax": 25.38,
+   "zmax": 24.75,
    "materials": [
     "grass",
     "pavement",
@@ -2928,7 +3798,7 @@
     -5760.0
    ],
    "zmin": -18.62,
-   "zmax": 24.7,
+   "zmax": 25.32,
    "materials": [
     "grass",
     "pavement",
@@ -2943,7 +3813,7 @@
     -5760.0
    ],
    "zmin": -20.0,
-   "zmax": 4.54,
+   "zmax": 5.03,
    "materials": [
     "sand"
    ]
@@ -2955,7 +3825,7 @@
     -5760.0
    ],
    "zmin": -20.0,
-   "zmax": 2.71,
+   "zmax": 2.88,
    "materials": [
     "sand"
    ]
@@ -2967,7 +3837,7 @@
     -5760.0
    ],
    "zmin": -20.0,
-   "zmax": 26.65,
+   "zmax": 25.93,
    "materials": [
     "grass",
     "rock",
@@ -2981,7 +3851,7 @@
     -5760.0
    ],
    "zmin": -15.24,
-   "zmax": 27.21,
+   "zmax": 27.85,
    "materials": [
     "grass",
     "pavement",
@@ -2996,7 +3866,7 @@
     -5760.0
    ],
    "zmin": -10.17,
-   "zmax": 28.35,
+   "zmax": 29.97,
    "materials": [
     "grass",
     "pavement",
@@ -3011,7 +3881,7 @@
     -5760.0
    ],
    "zmin": -8.34,
-   "zmax": 31.02,
+   "zmax": 25.4,
    "materials": [
     "grass",
     "pavement",
@@ -3026,7 +3896,7 @@
     -5760.0
    ],
    "zmin": -12.41,
-   "zmax": 27.97,
+   "zmax": 25.77,
    "materials": [
     "grass",
     "pavement",
@@ -3041,9 +3911,10 @@
     -5760.0
    ],
    "zmin": -20.0,
-   "zmax": 24.62,
+   "zmax": 28.91,
    "materials": [
     "grass",
+    "rock",
     "sand"
    ]
   },

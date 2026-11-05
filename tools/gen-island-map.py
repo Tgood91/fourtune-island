@@ -15,7 +15,7 @@ import json, math, random, pathlib, re, subprocess, sys
 random.seed(1017312)
 # The canvas. Map units are fixed (750, 500 = world X -5500, Y -6500; 2 m a unit), so growing
 # the canvas west and east moves nothing that was already built.
-VX0, VY0, W, H = -620, 0, 3400, 1300
+VX0, VY0, W, H = -620, 0, 4660, 1330
 out = []
 def a(s): out.append(s)
 def f(v): return f"{v:.1f}"
@@ -46,7 +46,9 @@ def inside_ellipse(x, y, cx, cy, rx, ry): return ((x-cx)/rx)**2 + ((y-cy)/ry)**2
 # well clear of Los Santos (north) and Cayo Perico (far east).
 ISLAND = [(-540,700),(-560,520),(-500,380),(-380,290),(-200,250),(-20,280),(150,330),(240,205),(420,150),(640,105),
           (900,92),(1120,112),(1290,165),(1395,265),(1470,330),(1600,280),(1800,200),(2050,140),(2330,120),(2560,180),
-          (2700,320),(2740,520),(2700,760),(2600,980),(2420,1140),(2150,1230),(1850,1250),(1640,1190),(1560,1040),
+          (2700,320),(2740,520),
+          (2800,570),(3050,560),(3350,550),(3650,575),(3850,680),(3900,880),(3840,1100),(3620,1230),   # the 1017 east expansion
+          (3300,1270),(3000,1250),(2780,1170),(2650,1060),(2600,980),(2420,1140),(2150,1230),(1850,1250),(1640,1190),(1560,1040),
           (1540,860),(1500,720),(1445,660),(1390,745),(1300,840),(1180,872),(760,880),(300,872),(195,840),(120,940),
           (0,1080),(-200,1160),(-400,1100),(-510,920)]
 MOUNTAIN = (780, 455)
@@ -368,6 +370,31 @@ road("w770-antler-lodge", "Antler Lodge Track — off Timberline Road to the hun
 road("w770-millyard", "Millyard Road — off the West Reach Parkway into Hollow Creek Lumber Yard", straight((30, 478), (30, 640)), "street")
 road("w770-timber-yard", "Timber Yard Lane — Pine Hollow Road to the lumber yard", curve((-100, 660), (-40, 652), (30, 640)), "street")
 
+# ---- The 1017 east expansion: new land east of Grande P, two neighbourhoods on a grid.
+# Added last, so every road above keeps its number. Peachtree East (Georgia counties north to
+# south, Southern trees west to east) and Birdsong (birds, stones), split by Midline Boulevard.
+road("e1017-peachtree", "Peachtree Boulevard — on from the Grande P Expressway, along the top of the east expansion",
+     curve((2655,600),(2720,622),(2790,630),(3260,630),(3780,630)), "arterial")
+road("e1017-midline", "Midline Boulevard — between Peachtree East and Birdsong", straight((3260,630), (3260,1150)), "arterial")
+road("e1017-southbank", "Southbank Boulevard — off Strand Boulevard, along the south of the east expansion",
+     curve((2560,900),(2620,990),(2700,1090),(2790,1150),(3260,1150),(3780,1150)), "arterial")
+PE_X = [2790 + i * 430 / 16 for i in range(17)]          # 17 streets, 2790..3220
+PE_Y = [660 + i * 460 / 17 for i in range(18)]           # 18 avenues, 660..1120
+BS_X = [3300 + i * 480 / 19 for i in range(20)]          # 20 streets, 3300..3780
+BS_Y = [660 + i * 460 / 18 for i in range(19)]           # 19 avenues, 660..1120
+for i, (n, x) in enumerate(zip(["Fulton", "Cobb", "DeKalb", "Gwinnett", "Clayton", "Fayette", "Henry", "Douglas", "Paulding",
+                                "Cherokee", "Forsyth", "Rockdale", "Newton", "Walton", "Barrow", "Bartow", "Coweta"], PE_X)):
+    road(f"e1017-pe-v{i}", f"{n} Street", straight((round(x, 1), 630), (round(x, 1), 1150)), "street")
+for i, (n, y) in enumerate(zip(["Magnolia", "Azalea", "Camellia", "Gardenia", "Jasmine", "Honeysuckle", "Wisteria", "Myrtle", "Redbud",
+                                "Sweetgum", "Tupelo", "Persimmon", "Loblolly", "Longleaf", "Live Oak", "Palmetto", "Cottonwood", "Bayberry"], PE_Y)):
+    road(f"e1017-pe-h{i}", f"{n} Avenue", straight((2790, round(y, 1)), (3260, round(y, 1))), "street")
+for i, (n, x) in enumerate(zip(["Cardinal", "Bluebird", "Mockingbird", "Thrasher", "Wren", "Finch", "Oriole", "Tanager", "Warbler", "Swallow",
+                                "Heron", "Egret", "Osprey", "Plover", "Sparrow", "Bunting", "Kingfisher", "Starling", "Lark", "Nuthatch"], BS_X)):
+    road(f"e1017-bs-v{i}", f"{n} Street", straight((round(x, 1), 630), (round(x, 1), 1150)), "street")
+for i, (n, y) in enumerate(zip(["Granite", "Marble", "Slate", "Quartz", "Mica", "Feldspar", "Flint", "Shale", "Garnet", "Jasper",
+                                "Agate", "Onyx", "Cobalt", "Topaz", "Opal", "Amber", "Basalt", "Obsidian", "Pumice"], BS_Y)):
+    road(f"e1017-bs-h{i}", f"{n} Avenue", straight((3260, round(y, 1)), (3780, round(y, 1))), "street")
+
 STYLE = {"highway": (16, "#5c5f63", "#cfd0cc"), "arterial": (11, "#5c5f63", "#d4d4cf"),
          "street": (7, "#6a6c6e", "#d9d6cc"), "street312": (4, None, "#8a8e93"), "track": (3, None, "#c9b48a")}
 # ---------------------------------------------------------------- every gameplay street (from js-snippets/places.js)
@@ -426,6 +453,31 @@ def around_rock(pts, margin=12):
         out.append((x, y))
     return out
 
+# Streets that lie mostly on the rock: pushed straight out (above), they all landed on the same
+# stretch of its edge, on top of each other. Each of these gets its own ring round the foot
+# instead (margin in map units past the rock), and runs along it the short way round.
+ROCK_RINGS = {"Silo Track": 12, "Hollow Road": 26, "Harvest Flats Road": 40}
+def ring_round_rock(pts, margin):
+    dense = [pts[0]]
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
+        n = max(1, int(math.dist((x1, y1), (x2, y2)) / 6))
+        dense += [(x1 + (x2 - x1) * k / n, y1 + (y2 - y1) * k / n) for k in range(1, n + 1)]
+    cx, cy, rx, ry = ROCK
+    ex, ey = rx + margin, ry + margin
+    on_rock = lambda x, y: ((x - cx) / ex) ** 2 + ((y - cy) / ey) ** 2 < 1
+    angle = lambda x, y: math.atan2((y - cy) / ey, (x - cx) / ex)
+    out, i = [], 0
+    while i < len(dense):
+        if not on_rock(*dense[i]): out.append(dense[i]); i += 1; continue
+        j = i
+        while j + 1 < len(dense) and on_rock(*dense[j + 1]): j += 1
+        a0, a1 = angle(*dense[i]), angle(*dense[j])
+        da = (a1 - a0 + math.pi) % (2 * math.pi) - math.pi          # the short way round
+        n = max(1, int(abs(da) * (ex + ey) / 2 / 6))
+        out += [(cx + ex * math.cos(a0 + da * k / n), cy + ey * math.sin(a0 + da * k / n)) for k in range(n + 1)]
+        i = j + 1
+    return out
+
 # Every road on the island gets a name and a number. Roads the game knows keep their
 # places.js number (1017-H1 ...); the map-only ones carry on each city's sequence.
 CODE_BY_NAME = {r["name"]: r["code"] for r in GAME["roads"]}
@@ -474,7 +526,8 @@ a('<g id="streets" fill="none" stroke-linecap="round" stroke-linejoin="round">')
 for kind in ["backroad", "street", "arterial", "highway"]:
     for i, r in enumerate(GAME["roads"]):
         if r["kind"] != kind or r["name"] in ON_ISLAND: continue
-        pts = around_rock([FIT[r["city"]](x, y) for x, y in r["points"]])
+        pts = [FIT[r["city"]](x, y) for x, y in r["points"]]
+        pts = ring_round_rock(pts, ROCK_RINGS[r["name"]]) if r["name"] in ROCK_RINGS else around_rock(pts)
         if pts[-1][0] < pts[0][0]: pts.reverse()                    # so the label reads left to right
         d = "M" + " L".join(f"{f(x)} {f(y)}" for x, y in pts)
         w, fill, casing, dash = STREET_STYLE[kind]
@@ -702,7 +755,7 @@ a(f'  <text class="name zone-name" x="1270" y="393" text-anchor="middle" font-si
 for x, y, name, kind in [(1715, 316, "Foundry Flats", "district"), (2450, 470, "Harrow Heights", "district"), (2000, 250, "Bayfront", "district"),
                          (2250, 704, "Kestrel Park", "park"), (2010, 455, "Grande P", "district"), (1800, 870, "Eastgate", "district"), (2130, 1085, "Saltwater Strand", "district"),
                          (2690, 448, "Lighthouse Point", "park"), (-210, 610, "Pine Hollow", "district"), (-300, 430, "The west woods", "district"),
-                         (-280, 960, "Copper Hills", "district"), (-330, 455, "Hunting Grounds", "park"), (30, 500, "Hollow Creek Lumber Yard", "district"), (-290, 1062, "Copper Hills logging", "park"), (-505, 760, "Sundown Beach", "park")]:
+                         (-280, 960, "Copper Hills", "district"), (3010, 610, "Peachtree East", "district"), (3520, 610, "Birdsong", "district"), (-330, 455, "Hunting Grounds", "park"), (30, 500, "Hollow Creek Lumber Yard", "district"), (-290, 1062, "Copper Hills logging", "park"), (-505, 760, "Sundown Beach", "park")]:
     a(f'  <text class="name zone-name" x="{x}" y="{y}" text-anchor="middle" font-size="{9 if kind == "district" else 7}" font-style="italic" '
       f'fill="{"#ffe9a8" if kind == "district" else "#c9f2b8"}" stroke-width="2.4">{name}</text>')
 a('</g>')

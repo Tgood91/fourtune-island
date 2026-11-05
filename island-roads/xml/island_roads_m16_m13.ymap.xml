@@ -5,17 +5,17 @@
   <parent />
   <flags value="0" />
   <contentFlags value="1" />
-  <streamingExtentsMin x="-8362.599702" y="-7061.689270" z="-376.975875" />
-  <streamingExtentsMax x="-7276.169042" y="-5780.012826" z="435.718737" />
-  <entitiesExtentsMin x="-7962.599702" y="-6661.689270" z="23.024125" />
-  <entitiesExtentsMax x="-7676.169042" y="-6180.012826" z="35.718737" />
+  <streamingExtentsMin x="-8362.599702" y="-7061.689270" z="-376.971130" />
+  <streamingExtentsMax x="-7276.169042" y="-5780.012826" z="439.969061" />
+  <entitiesExtentsMin x="-7962.599702" y="-6661.689270" z="23.028870" />
+  <entitiesExtentsMax x="-7676.169042" y="-6180.012826" z="39.969061" />
   <entities>
     <Item type="CEntityDef">
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7682.572166" y="-6609.793154" z="26.724707" />
-      <rotation x="-0.008835" y="-0.014283" z="0.850341" w="-0.525964" />
+      <position x="-7682.572166" y="-6609.793154" z="27.762751" />
+      <rotation x="-0.012948" y="-0.020933" z="0.850204" w="-0.525878" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -33,8 +33,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7691.352196" y="-6614.195408" z="26.406449" />
-      <rotation x="-0.008230" y="-0.013360" z="0.851312" w="-0.524425" />
+      <position x="-7691.352196" y="-6614.195408" z="27.276493" />
+      <rotation x="-0.013110" y="-0.021281" z="0.851151" w="-0.524325" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -52,8 +52,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7687.753619" y="-6621.340354" z="26.406449" />
-      <rotation x="-0.008230" y="-0.013360" z="0.851312" w="-0.524425" />
+      <position x="-7687.753619" y="-6621.340354" z="27.276493" />
+      <rotation x="-0.013110" y="-0.021281" z="0.851151" w="-0.524325" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -71,8 +71,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7684.155043" y="-6628.485299" z="26.406449" />
-      <rotation x="-0.008230" y="-0.013360" z="0.851312" w="-0.524425" />
+      <position x="-7684.155043" y="-6628.485299" z="27.276493" />
+      <rotation x="-0.013110" y="-0.021281" z="0.851151" w="-0.524325" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -90,8 +90,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7700.112213" y="-6618.623449" z="26.112989" />
-      <rotation x="-0.007465" y="-0.012156" z="0.852078" w="-0.523220" />
+      <position x="-7700.112213" y="-6618.623449" z="26.798136" />
+      <rotation x="-0.012459" y="-0.020289" z="0.851923" w="-0.523125" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -109,8 +109,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7696.493254" y="-6625.758092" z="26.112989" />
-      <rotation x="-0.007465" y="-0.012156" z="0.852078" w="-0.523220" />
+      <position x="-7696.493254" y="-6625.758092" z="26.798136" />
+      <rotation x="-0.012459" y="-0.020289" z="0.851923" w="-0.523125" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -128,8 +128,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7692.874296" y="-6632.892736" z="26.112989" />
-      <rotation x="-0.007465" y="-0.012156" z="0.852078" w="-0.523220" />
+      <position x="-7692.874296" y="-6632.892736" z="26.798136" />
+      <rotation x="-0.012459" y="-0.020289" z="0.851923" w="-0.523125" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -147,8 +147,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7708.860828" y="-6623.078730" z="25.850296" />
-      <rotation x="-0.006552" y="-0.010707" z="0.852914" w="-0.521901" />
+      <position x="-7708.860828" y="-6623.078730" z="26.355891" />
+      <rotation x="-0.011126" y="-0.018183" z="0.852787" w="-0.521823" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -166,8 +166,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7705.219598" y="-6630.202033" z="25.850296" />
-      <rotation x="-0.006552" y="-0.010707" z="0.852914" w="-0.521901" />
+      <position x="-7705.219598" y="-6630.202033" z="26.355891" />
+      <rotation x="-0.011126" y="-0.018183" z="0.852787" w="-0.521823" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -185,8 +185,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7701.578368" y="-6637.325336" z="25.850296" />
-      <rotation x="-0.006552" y="-0.010707" z="0.852914" w="-0.521901" />
+      <position x="-7701.578368" y="-6637.325336" z="26.355891" />
+      <rotation x="-0.011126" y="-0.018183" z="0.852787" w="-0.521823" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -204,8 +204,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7717.592072" y="-6627.555346" z="25.623238" />
-      <rotation x="-0.005537" y="-0.009073" z="0.853560" w="-0.520887" />
+      <position x="-7717.592072" y="-6627.555346" z="25.971305" />
+      <rotation x="-0.009341" y="-0.015307" z="0.853471" w="-0.520832" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -223,8 +223,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7713.933728" y="-6634.669875" z="25.623238" />
-      <rotation x="-0.005537" y="-0.009073" z="0.853560" w="-0.520887" />
+      <position x="-7713.933728" y="-6634.669875" z="25.971305" />
+      <rotation x="-0.009341" y="-0.015307" z="0.853471" w="-0.520832" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -242,8 +242,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7710.275383" y="-6641.784403" z="25.623238" />
-      <rotation x="-0.005537" y="-0.009073" z="0.853560" w="-0.520887" />
+      <position x="-7710.275383" y="-6641.784403" z="25.971305" />
+      <rotation x="-0.009341" y="-0.015307" z="0.853471" w="-0.520832" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -261,8 +261,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7726.313255" y="-6632.054253" z="25.435069" />
-      <rotation x="-0.004462" y="-0.007333" z="0.854242" w="-0.519804" />
+      <position x="-7726.313255" y="-6632.054253" z="25.657219" />
+      <rotation x="-0.007344" y="-0.012069" z="0.854189" w="-0.519771" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -280,8 +280,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7722.636711" y="-6639.159394" z="25.435069" />
-      <rotation x="-0.004462" y="-0.007333" z="0.854242" w="-0.519804" />
+      <position x="-7722.636711" y="-6639.159394" z="25.657219" />
+      <rotation x="-0.007344" y="-0.012069" z="0.854189" w="-0.519771" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -299,8 +299,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7718.960168" y="-6646.264535" z="25.435069" />
-      <rotation x="-0.004462" y="-0.007333" z="0.854242" w="-0.519804" />
+      <position x="-7718.960168" y="-6646.264535" z="25.657219" />
+      <rotation x="-0.007344" y="-0.012069" z="0.854189" w="-0.519771" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -318,8 +318,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7735.021628" y="-6636.573364" z="25.287045" />
-      <rotation x="-0.003388" y="-0.005583" z="0.854853" w="-0.518830" />
+      <position x="-7735.021628" y="-6636.573364" z="25.417321" />
+      <rotation x="-0.005377" y="-0.008860" z="0.854825" w="-0.518813" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -337,8 +337,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7731.328764" y="-6643.670036" z="25.287045" />
-      <rotation x="-0.003388" y="-0.005583" z="0.854853" w="-0.518830" />
+      <position x="-7731.328764" y="-6643.670036" z="25.417321" />
+      <rotation x="-0.005377" y="-0.008860" z="0.854825" w="-0.518813" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -356,8 +356,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7727.635900" y="-6650.766708" z="25.287045" />
-      <rotation x="-0.003388" y="-0.005583" z="0.854853" w="-0.518830" />
+      <position x="-7727.635900" y="-6650.766708" z="25.417321" />
+      <rotation x="-0.005377" y="-0.008860" z="0.854825" w="-0.518813" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -375,8 +375,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7743.716877" y="-6641.103909" z="25.177667" />
-      <rotation x="-0.002403" y="-0.003967" z="0.855251" w="-0.518193" />
+      <position x="-7743.716877" y="-6641.103909" z="25.246971" />
+      <rotation x="-0.003643" y="-0.006012" z="0.855239" w="-0.518186" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -394,8 +394,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7740.013360" y="-6648.195027" z="25.177667" />
-      <rotation x="-0.002403" y="-0.003967" z="0.855251" w="-0.518193" />
+      <position x="-7740.013360" y="-6648.195027" z="25.246971" />
+      <rotation x="-0.003643" y="-0.006012" z="0.855239" w="-0.518186" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -413,8 +413,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7736.309843" y="-6655.286146" z="25.177667" />
-      <rotation x="-0.002403" y="-0.003967" z="0.855251" w="-0.518193" />
+      <position x="-7736.309843" y="-6655.286146" z="25.246971" />
+      <rotation x="-0.003643" y="-0.006012" z="0.855239" w="-0.518186" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -432,8 +432,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7752.403074" y="-6645.651566" z="25.101996" />
-      <rotation x="-0.001599" y="-0.002643" z="0.855642" w="-0.517560" />
+      <position x="-7752.403074" y="-6645.651566" z="25.134867" />
+      <rotation x="-0.002286" y="-0.003780" z="0.855637" w="-0.517557" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -451,8 +451,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7748.689002" y="-6652.737162" z="25.101996" />
-      <rotation x="-0.001599" y="-0.002643" z="0.855642" w="-0.517560" />
+      <position x="-7748.689002" y="-6652.737162" z="25.134867" />
+      <rotation x="-0.002286" y="-0.003780" z="0.855637" w="-0.517557" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -470,8 +470,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7761.081630" y="-6650.209218" z="25.053093" />
-      <rotation x="-0.000985" y="-0.001630" z="0.855961" w="-0.517038" />
+      <position x="-7761.081630" y="-6650.209218" z="25.066676" />
+      <rotation x="-0.001316" y="-0.002179" z="0.855959" w="-0.517037" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -489,8 +489,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7769.754340" y="-6654.775093" z="25.024125" />
-      <rotation x="-0.000544" y="-0.000902" z="0.856234" w="-0.516587" />
+      <position x="-7769.754340" y="-6654.775093" z="25.028870" />
+      <rotation x="-0.000679" y="-0.001126" z="0.856234" w="-0.516586" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -508,8 +508,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7956.196578" y="-6376.887214" z="31.328891" />
-      <rotation x="-0.008471" y="0.003964" z="0.423827" w="0.905695" />
+      <position x="-7956.196578" y="-6376.887214" z="34.132675" />
+      <rotation x="-0.002474" y="0.001158" z="0.423844" w="0.905731" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -527,8 +527,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7948.750722" y="-6370.470025" z="31.525678" />
-      <rotation x="-0.009718" y="0.004392" z="0.411823" w="0.911201" />
+      <position x="-7948.750722" y="-6370.470025" z="34.189221" />
+      <rotation x="-0.002753" y="0.001244" z="0.411845" w="0.911249" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -546,8 +546,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7941.419763" y="-6363.921576" z="31.741301" />
-      <rotation x="-0.010296" y="0.004577" z="0.406174" w="0.913726" />
+      <position x="-7941.419763" y="-6363.921576" z="34.249207" />
+      <rotation x="-0.002816" y="0.001252" z="0.406198" w="0.913780" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -565,8 +565,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7934.147046" y="-6357.308435" z="32.049769" />
-      <rotation x="-0.018391" y="0.008108" z="0.403333" w="0.914832" />
+      <position x="-7934.147046" y="-6357.308435" z="34.332153" />
+      <rotation x="-0.004901" y="0.002161" z="0.403409" w="0.915004" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -584,8 +584,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7926.900050" y="-6350.667095" z="32.448908" />
-      <rotation x="-0.018750" y="0.008239" z="0.402207" w="0.915320" />
+      <position x="-7926.900050" y="-6350.667095" z="34.431829" />
+      <rotation x="-0.004379" y="0.001924" z="0.402287" w="0.915501" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -603,8 +603,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7919.660573" y="-6344.017553" z="32.840524" />
-      <rotation x="-0.017702" y="0.007776" z="0.402097" w="0.915393" />
+      <position x="-7919.660573" y="-6344.017553" z="34.510781" />
+      <rotation x="-0.002974" y="0.001306" z="0.402171" w="0.915559" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -622,8 +622,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7912.418797" y="-6337.370519" z="33.196654" />
-      <rotation x="-0.015447" y="0.006797" z="0.402682" w="0.915185" />
+      <position x="-7912.418797" y="-6337.370519" z="34.550540" />
+      <rotation x="-0.000729" y="0.000321" z="0.402739" w="0.915315" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -641,8 +641,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7905.162347" y="-6330.739512" z="33.478977" />
-      <rotation x="-0.010826" y="0.004781" z="0.403963" w="0.914699" />
+      <position x="-7905.162347" y="-6330.739512" z="34.530117" />
+      <rotation x="0.002629" y="-0.001161" z="0.403990" w="0.914759" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -660,8 +660,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7897.886814" y="-6324.129455" z="33.655299" />
-      <rotation x="-0.005575" y="0.002475" z="0.405697" w="0.913987" />
+      <position x="-7897.886814" y="-6324.129455" z="34.433265" />
+      <rotation x="0.006378" y="-0.002831" z="0.405695" w="0.913982" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -679,8 +679,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7890.582400" y="-6317.551327" z="33.718737" />
-      <rotation x="-0.000323" y="0.000144" z="0.407778" w="0.913081" />
+      <position x="-7890.582400" y="-6317.551327" z="34.256110" />
+      <rotation x="0.010081" y="-0.004502" z="0.407753" w="0.913025" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -698,8 +698,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7883.245210" y="-6311.009782" z="33.676655" />
-      <rotation x="0.004226" y="-0.001901" z="0.410261" w="0.911956" />
+      <position x="-7883.245210" y="-6311.009782" z="34.006272" />
+      <rotation x="0.013104" y="-0.005895" z="0.410223" w="0.911872" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -717,8 +717,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7875.869571" y="-6304.511624" z="33.554562" />
-      <rotation x="0.007090" y="-0.003217" z="0.413167" w="0.910622" />
+      <position x="-7875.869571" y="-6304.511624" z="33.708028" />
+      <rotation x="0.014535" y="-0.006595" z="0.413127" w="0.910533" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -736,8 +736,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7868.450026" y="-6298.063652" z="33.391176" />
-      <rotation x="0.008032" y="-0.003679" z="0.416390" w="0.909143" />
+      <position x="-7868.450026" y="-6298.063652" z="33.400027" />
+      <rotation x="0.013965" y="-0.006396" z="0.416357" w="0.909072" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -755,8 +755,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7860.983690" y="-6291.669923" z="33.225796" />
-      <rotation x="0.007250" y="-0.003354" z="0.419883" w="0.907543" />
+      <position x="-7860.983690" y="-6291.669923" z="33.126303" />
+      <rotation x="0.011324" y="-0.005239" z="0.419864" w="0.907501" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -774,8 +774,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7853.463358" y="-6285.339806" z="33.090801" />
-      <rotation x="0.005202" y="-0.002435" z="0.423952" w="0.905667" />
+      <position x="-7853.463358" y="-6285.339806" z="32.929689" />
+      <rotation x="0.006811" y="-0.003188" z="0.423947" w="0.905656" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -793,8 +793,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7845.884856" y="-6279.079458" z="33.006871" />
-      <rotation x="0.002525" y="-0.001197" z="0.428368" w="0.903600" />
+      <position x="-7845.884856" y="-6279.079458" z="32.846130" />
+      <rotation x="0.000885" y="-0.000419" z="0.428369" w="0.903603" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -812,8 +812,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7838.242499" y="-6272.897240" z="32.981179" />
-      <rotation x="-0.000163" y="0.000078" z="0.433226" w="0.901285" />
+      <position x="-7838.242499" y="-6272.897240" z="32.900008" />
+      <rotation x="-0.005822" y="0.002799" z="0.433217" w="0.901266" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -831,8 +831,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7830.530753" y="-6266.801814" z="33.008395" />
-      <rotation x="-0.002326" y="0.001135" z="0.438573" w="0.898692" />
+      <position x="-7830.530753" y="-6266.801814" z="33.100796" />
+      <rotation x="-0.012548" y="0.006123" z="0.438531" w="0.898607" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -850,8 +850,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7822.743428" y="-6260.803264" z="33.072701" />
-      <rotation x="-0.003541" y="0.001757" z="0.444511" w="0.895765" />
+      <position x="-7822.743428" y="-6260.803264" z="33.441030" />
+      <rotation x="-0.018483" y="0.009172" z="0.444420" w="0.895581" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -869,8 +869,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7814.872562" y="-6254.914786" z="33.153053" />
-      <rotation x="-0.003767" y="0.001904" z="0.451097" w="0.892465" />
+      <position x="-7814.872562" y="-6254.914786" z="33.898538" />
+      <rotation x="-0.023089" y="0.011670" z="0.450950" w="0.892174" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -888,8 +888,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7806.911610" y="-6249.148732" z="33.230420" />
-      <rotation x="-0.003244" y="0.001673" z="0.458397" w="0.888740" />
+      <position x="-7806.911610" y="-6249.148732" z="34.443230" />
+      <rotation x="-0.026198" y="0.013513" z="0.458201" w="0.888360" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -907,8 +907,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7798.851919" y="-6243.521569" z="33.292313" />
-      <rotation x="-0.002341" y="0.001235" z="0.466550" w="0.884491" />
+      <position x="-7798.851919" y="-6243.521569" z="35.042610" />
+      <rotation x="-0.027785" y="0.014656" z="0.466321" w="0.884058" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -926,8 +926,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7790.683817" y="-6238.053021" z="33.334518" />
-      <rotation x="-0.001449" y="0.000784" z="0.475736" w="0.879587" />
+      <position x="-7790.683817" y="-6238.053021" z="35.663456" />
+      <rotation x="-0.027841" y="0.015058" z="0.475498" w="0.879147" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -945,8 +945,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7782.396383" y="-6232.767163" z="33.359490" />
-      <rotation x="-0.000781" y="0.000434" z="0.486019" w="0.873948" />
+      <position x="-7782.396383" y="-6232.767163" z="36.271604" />
+      <rotation x="-0.026330" y="0.014643" z="0.485798" w="0.873552" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -964,8 +964,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7773.978629" y="-6227.691570" z="33.372336" />
-      <rotation x="-0.000358" y="0.000206" z="0.497918" w="0.867224" />
+      <position x="-7773.978629" y="-6227.691570" z="36.831857" />
+      <rotation x="-0.023241" y="0.013344" z="0.497739" w="0.866913" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -983,8 +983,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7765.416099" y="-6222.864402" z="33.377859" />
-      <rotation x="-0.000128" y="0.000076" z="0.511449" w="0.859314" />
+      <position x="-7765.416099" y="-6222.864402" z="37.310020" />
+      <rotation x="-0.018735" y="0.011151" z="0.511327" w="0.859110" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1002,8 +1002,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7756.703038" y="-6218.314442" z="33.378805" />
-      <rotation x="0.000045" y="-0.000027" z="0.522773" w="0.852472" />
+      <position x="-7756.703038" y="-6218.314442" z="37.675516" />
+      <rotation x="-0.013094" y="0.008030" z="0.522711" w="0.852371" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1021,8 +1021,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7747.913124" y="-6213.914156" z="33.374650" />
-      <rotation x="0.000314" y="-0.000195" z="0.528211" w="0.849113" />
+      <position x="-7747.913124" y="-6213.914156" z="37.902084" />
+      <rotation x="-0.006524" y="0.004058" z="0.528195" w="0.849088" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1040,8 +1040,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7739.067915" y="-6209.626115" z="33.361024" />
-      <rotation x="0.000859" y="-0.000542" z="0.533664" w="0.845696" />
+      <position x="-7739.067915" y="-6209.626115" z="37.969061" />
+      <rotation x="0.000736" y="-0.000464" z="0.533664" w="0.845696" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1059,8 +1059,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7730.167677" y="-6205.453495" z="33.329591" />
-      <rotation x="0.001837" y="-0.001176" z="0.539199" w="0.842176" />
+      <position x="-7730.167677" y="-6205.453495" z="37.865318" />
+      <rotation x="0.008154" y="-0.005221" z="0.539175" w="0.842138" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1078,8 +1078,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7721.213012" y="-6201.399003" z="33.269888" />
-      <rotation x="0.003264" y="-0.002121" z="0.544823" w="0.838542" />
+      <position x="-7721.213012" y="-6201.399003" z="37.593997" />
+      <rotation x="0.015018" y="-0.009758" z="0.544740" w="0.838414" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1097,8 +1097,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7712.204557" y="-6197.465471" z="33.172524" />
-      <rotation x="0.005019" y="-0.003310" z="0.550493" w="0.834818" />
+      <position x="-7712.204557" y="-6197.465471" z="37.174960" />
+      <rotation x="0.020611" y="-0.013591" z="0.550335" w="0.834579" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1116,8 +1116,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7703.143142" y="-6193.655532" z="33.031304" />
-      <rotation x="0.006941" y="-0.004646" z="0.556213" w="0.830998" />
+      <position x="-7703.143142" y="-6193.655532" z="36.642508" />
+      <rotation x="0.024447" y="-0.016363" z="0.555992" w="0.830667" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1135,8 +1135,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7694.029751" y="-6189.971660" z="32.843569" />
-      <rotation x="0.008886" y="-0.006038" z="0.561971" w="0.827087" />
+      <position x="-7694.029751" y="-6189.971660" z="36.039419" />
+      <rotation x="0.026343" y="-0.017899" z="0.561718" w="0.826715" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
@@ -1154,8 +1154,8 @@
       <archetypeName>stt_prop_track_straight_s</archetypeName>
       <flags value="1572864" />
       <guid value="0" />
-      <position x="-7684.865600" y="-6186.415950" z="32.610157" />
-      <rotation x="0.010699" y="-0.007380" z="0.567785" w="0.823074" />
+      <position x="-7684.865600" y="-6186.415950" z="35.411030" />
+      <rotation x="0.026324" y="-0.018159" z="0.567542" w="0.822723" />
       <scaleXY value="1" />
       <scaleZ value="1" />
       <parentIndex value="-1" />
