@@ -35,6 +35,10 @@ node tools/render-streets.js                          # street-renders/ and worl
 python3 tools/gen-island-streets.py                   # island-streets/data.lua
 ```
 
+`node tools/render-island-3d.js` renders the island in 3D from all of that: the terrain at true scale
+with the map draped on it, the buildings, houses and trees stood up, and the bridges on their piers.
+Writes `island-poster/renders/island-3d-<view>.png` (views: overview, mountain, east).
+
 Needs Python 3 with numpy, and Node with Playwright + Chromium. The street renders aren't
 deterministic, so rerunning them changes images that didn't really change; only commit the ones
 for roads you touched.

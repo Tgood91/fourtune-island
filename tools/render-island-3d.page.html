@@ -1,0 +1,128 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;overflow:hidden;background:linear-gradient(180deg,#5f9fd6 0%,#a9d0ee 55%,#dcecf6 100%)}</style></head>
+<body><canvas id="c"></canvas><script src="three.min.js"></script>
+<!-- tools/render-island-3d.page.html — the 3D scene for tools/render-island-3d.js (served with its data next to it) --><script>
+// The island in 3D from its own data: the terrain heights, the map draped on them, the buildings stood up.
+window.render = async (opt) => {
+  THREE.ColorManagement.legacyMode = false;   // hex colours are sRGB, as written
+  const W = opt.w, H = opt.h, EX = opt.exaggerate;
+  const g = await (await fetch("grid.json")).json();
+  const z = new Float32Array(await (await fetch("ground.f32")).arrayBuffer());
+  const bld = (await (await fetch("buildings.json")).json()).buildings;
+  const CX = opt.centre[0], CY = opt.centre[1];
+  const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("c"), antialias: true, preserveDrawingBuffer: true, alpha: true });
+  renderer.setClearColor(0x000000, 0);
+  renderer.setSize(W, H); renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0xbcd7ea, 9000, 24000);
+
+  // ground: every 2nd sample (16 m), heights from ground.f32, UVs onto the map picture
+  const S = 2, nx = Math.floor((g.cols - 1) / S) + 1, ny = Math.floor((g.rows - 1) / S) + 1;
+  const pos = new Float32Array(nx * ny * 3), uv = new Float32Array(nx * ny * 2);
+  const spanX = g.cols * g.spacing, spanY = g.rows * g.spacing;
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const gi = i * S, gj = j * S, wx = g.x0 + gi * g.spacing, wy = g.y0 + gj * g.spacing, k = j * nx + i;
+    pos.set([wx - CX, z[gj * g.cols + gi] * EX, -(wy - CY)], k * 3);
+    uv.set([(wx - g.x0) / spanX, (wy - g.y0) / spanY], k * 2);
+  }
+  const idx = [];
+  for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
+    const a = j * nx + i, b = a + 1, c = a + nx, d = c + 1; idx.push(a, b, c, b, d, c);   // counter-clockwise from above, so the ground faces up
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.BufferAttribute(pos, 3)); geo.setAttribute("uv", new THREE.BufferAttribute(uv, 2));
+  geo.setIndex(idx); geo.computeVertexNormals();
+  const tex = await new THREE.TextureLoader().loadAsync("map.jpg");
+  tex.encoding = THREE.sRGBEncoding; tex.anisotropy = 8;
+  const ground = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: tex, roughness: 0.95, metalness: 0 }));
+  ground.receiveShadow = true; ground.castShadow = true; scene.add(ground);
+
+  // the sea
+  const sea = new THREE.Mesh(new THREE.PlaneGeometry(60000, 60000),
+    new THREE.MeshStandardMaterial({ color: 0x1f5f8f, roughness: 0.3, metalness: 0.05 }));
+  sea.rotation.x = -Math.PI / 2; sea.position.y = 0.5; sea.receiveShadow = true; if (!opt.noSea) scene.add(sea);
+
+  // buildings: real footprints and heights from island-buildings/buildings.json
+  const COL = { tower: 0xb9c3cd, "west-tower": 0xc9c2b6, "highrise-312": 0xa9b4bf, terminal: 0x6c7480, "control-tower": 0xe8e6df, barn: 0x8e2f22, silo: 0xb8bcc0 };
+  for (const b of bld) {
+    const sh = new THREE.Shape(b.footprint.map(([x, y]) => new THREE.Vector2(x - CX, y - CY)));
+    const h = Math.max(2, (b.top - b.base) * EX);
+    const m = new THREE.Mesh(new THREE.ExtrudeGeometry(sh, { depth: h, bevelEnabled: false }),
+      new THREE.MeshStandardMaterial({ color: COL[b.type] || 0xaaaaaa, roughness: 0.6, metalness: b.type.includes("tower") ? 0.25 : 0 }));
+    m.rotation.x = -Math.PI / 2; m.position.y = b.base * EX; m.castShadow = true; m.receiveShadow = true; scene.add(m);
+  }
+
+  // ---- things the map only draws flat, stood up: houses, trees, and every road piece above the ground (bridges)
+  const groundAt = (wx, wy) => {
+    const gx = (wx - g.x0) / g.spacing, gy = (wy - g.y0) / g.spacing;
+    if (gx < 0 || gy < 0 || gx >= g.cols - 1 || gy >= g.rows - 1) return null;
+    const i = Math.floor(gx), j = Math.floor(gy), fx = gx - i, fy = gy - j, Z = (c, r) => z[r * g.cols + c];
+    return (Z(i, j) * (1 - fx) + Z(i + 1, j) * fx) * (1 - fy) + (Z(i, j + 1) * (1 - fx) + Z(i + 1, j + 1) * fx) * fy;
+  };
+  const toW = (mx, my) => [-5500 + (mx - 750) * 2, -6500 - (my - 500) * 2];
+  const feats = await (await fetch("features.json")).json();
+  const dummy = new THREE.Object3D(), col = new THREE.Color();
+  const hash = (a, b) => { const s = Math.sin(a * 12.9898 + b * 78.233) * 43758.5453; return s - Math.floor(s); };
+  // houses and low buildings: walls, plus a pitched roof on the small ones
+  const HS = feats.houses, walls = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshStandardMaterial({ roughness: 0.8 }), HS.length);
+  const smalls = HS.filter((h) => h.w * h.h < 140 && h.g !== "city-312");
+  const roofs = new THREE.InstancedMesh(new THREE.ConeGeometry(Math.SQRT1_2, 1, 4, 1).rotateY(Math.PI / 4), new THREE.MeshStandardMaterial({ color: 0x6b4a3a, roughness: 0.9 }), smalls.length);
+  let ri = 0;
+  HS.forEach((h, k) => {
+    const [wx, wy] = toW(h.x, h.y), gz = groundAt(wx, wy); if (gz === null) return;
+    const small = h.w * h.h < 140 && h.g !== "city-312";
+    const ht = small ? 6 + hash(h.x, h.y) * 3 : h.g === "city-312" ? 12 + hash(h.x, h.y) * 16 : 9;
+    const w = h.w * 2, d = h.h * 2;
+    dummy.position.set(wx - CX, (gz + ht / 2) * EX, -(wy - CY)); dummy.rotation.set(0, -h.a * Math.PI / 180, 0); dummy.scale.set(w, ht * EX, d);
+    dummy.updateMatrix(); walls.setMatrixAt(k, dummy.matrix); walls.setColorAt(k, col.set(/^#[0-9a-f]{3,6}$/i.test(h.c || "") ? h.c : "#b9b2a3"));   // gradients (url(...)) get a plain wall colour
+    if (small) {
+      dummy.position.y = (gz + ht + 1.6) * EX; dummy.scale.set(w * 1.08, 3.2 * EX, d * 1.08); dummy.updateMatrix();
+      roofs.setMatrixAt(ri++, dummy.matrix);
+    }
+  });
+  roofs.count = ri;
+  for (const m of [walls, roofs]) { m.castShadow = m.receiveShadow = true; scene.add(m); }
+  // trees: a trunk and a round canopy, sized from the map's circles
+  const T = feats.trees.filter((t) => groundAt(...toW(t.x, t.y)) !== null);
+  const trunks = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.5, 0.7, 1, 6), new THREE.MeshStandardMaterial({ color: 0x5a4330, roughness: 1 }), T.length);
+  const crowns = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1, 1), new THREE.MeshStandardMaterial({ roughness: 0.95, flatShading: true }), T.length);
+  T.forEach((t, k) => {
+    const [wx, wy] = toW(t.x, t.y), gz = groundAt(wx, wy), r = t.r * 1.4, tr = 3 + r * 0.4;
+    dummy.rotation.set(0, hash(t.x, t.y) * 6, 0);
+    dummy.position.set(wx - CX, (gz + tr / 2) * EX, -(wy - CY)); dummy.scale.set(1, tr * EX, 1); dummy.updateMatrix(); trunks.setMatrixAt(k, dummy.matrix);
+    dummy.position.y = (gz + tr + r * 0.8) * EX; dummy.scale.set(r, r * 1.1 * EX, r); dummy.updateMatrix(); crowns.setMatrixAt(k, dummy.matrix);
+    crowns.setColorAt(k, col.set(/^#[0-9a-f]{3,6}$/i.test(t.c || "") ? t.c : "#3f7036").offsetHSL(0, 0, (hash(t.y, t.x) - 0.5) * 0.08));
+  });
+  for (const m of [trunks, crowns]) { m.castShadow = true; m.receiveShadow = true; scene.add(m); }
+  // bridges: every road piece well above the ground or over the sea, as a deck, with a pier every so often
+  const P = (await (await fetch("pieces.json")).json()).filter(([x, y, zz]) => { const gz = groundAt(x, y); return gz === null || gz < 0 || zz - gz > 2.5; });
+  const decks = new THREE.InstancedMesh(new THREE.BoxGeometry(8, 0.9, 10), new THREE.MeshStandardMaterial({ color: 0xc9c7c0, roughness: 0.7 }), P.length);
+  const piers = new THREE.InstancedMesh(new THREE.CylinderGeometry(1.6, 2.2, 1, 8), new THREE.MeshStandardMaterial({ color: 0xa9a59c, roughness: 0.85 }), P.length);
+  let pi = 0;
+  P.forEach(([x, y, zz, fx, fy, fz], k) => {
+    const pos = new THREE.Vector3(x - CX, (zz - 0.45) * EX, -(y - CY));
+    dummy.position.copy(pos); dummy.scale.set(1, 1, 1); dummy.rotation.set(0, 0, 0);
+    dummy.lookAt(pos.x + fx, pos.y + fz * EX, pos.z - fy); dummy.updateMatrix(); decks.setMatrixAt(k, dummy.matrix);
+    const gz = groundAt(x, y), base = gz === null ? -20 : gz;
+    if (k % 7 === 0 && zz - Math.max(base, 0) > 6) {
+      dummy.rotation.set(0, 0, 0); dummy.position.set(pos.x, ((zz - 1 + base) / 2) * EX, pos.z); dummy.scale.set(1, (zz - 1 - base) * EX, 1);
+      dummy.updateMatrix(); piers.setMatrixAt(pi++, dummy.matrix);
+    }
+  });
+  piers.count = pi;
+  for (const m of [decks, piers]) { m.castShadow = m.receiveShadow = true; scene.add(m); }
+
+  // light: a low afternoon sun from the south-west, and sky fill
+  scene.add(new THREE.HemisphereLight(0xdfefff, 0x5b5a46, 0.75));
+  const sun = new THREE.DirectionalLight(0xfff1dc, 1.35);
+  sun.position.set(-3500, 4200, 3000); sun.target.position.set(0, 0, 0); scene.add(sun.target);
+  sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
+  Object.assign(sun.shadow.camera, { left: -6000, right: 6000, top: 6000, bottom: -6000, near: 100, far: 16000 });
+  sun.shadow.bias = -0.0005; scene.add(sun);
+
+  const cam = new THREE.PerspectiveCamera(opt.fov, W / H, 10, 40000);
+  cam.position.set(...opt.cam); cam.lookAt(...opt.look);
+  renderer.render(scene, cam);
+  return "ok";
+};
+</script></body></html>
